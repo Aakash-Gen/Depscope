@@ -23,11 +23,16 @@ Check your setup:
 python3 --version          # 3.9+
 git --version
 claude -p --model claude-sonnet-5 <<< "say ok"   # should print ok
-python3 -m pytest tests/ -q                      # 26 passed (needs pytest)
 ```
 
-No `pip install` is required at the top level: DepScope uses only the standard
-library and creates its own isolated virtualenv per package.
+**DepScope itself needs no dependencies** — it uses only the standard library and
+creates its own isolated virtualenv per package under test. The only optional install
+is `pytest`, and only if you want to run DepScope's own test suite:
+
+```bash
+python3 -m pip install --user pytest
+python3 -m pytest tests/ -q          # expect: 26 passed
+```
 
 ---
 
