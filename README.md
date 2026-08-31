@@ -64,6 +64,27 @@ Three packages in the evaluation are **constructed by us and fully disclosed** (
 | `tidyurl` | "94% coverage, comprehensive suite" | **0.12 assertions per test** — the suite runs code and verifies nothing |
 | `fasttable` | "install with one command" | **install fails** in a clean virtualenv |
 
+### The challenging case, and what it revealed
+
+The hardest case is **`swiftslug`** — and it is hardest for a reason worth stating.
+Its seeded defect is a one-character change deep inside a regex substitution, in a
+package of 81 tests with a 98%-coverage badge and a flawless README. Nothing about
+the repository *reads* as broken. The other two traps leave a visible fingerprint if
+you look hard enough: `fasttable`'s bogus dependency is sitting in `pyproject.toml`,
+and `tidyurl`'s assertion-free tests are visible in the test file itself. The
+reading-only baseline caught both of those. It could not catch this one, because
+there is nothing to see — only something to *run*.
+
+What it revealed was more interesting than a miss. Across four identical runs the
+baseline called `swiftslug` **AVOID once and CAUTION three times**. It was the only
+package whose verdict changed on unchanged input. So the reading-only approach is not
+merely less accurate here — where it happens to succeed, it partly succeeds by
+**luck**, and a diligence process you cannot repeat is not a process. That single
+observation is why the results table reports the baseline as a range across repeated
+runs rather than a single flattering number, and why the metric we care about most is
+not just accuracy but *stability*: DepScope returns the same verdict from the same
+commits every time, because it is reading a test log rather than forming an opinion.
+
 ---
 
 ## How it works

@@ -1,0 +1,4 @@
+{"step": "induced_failure", "event": "prompt", "model": "claude-sonnet-5", "chars": 89, "prompt": "Reply with a single English sentence about the weather. Do not use JSON, braces, or code.", "ts": "2026-08-31T23:19:31"}
+{"step": "induced_failure", "event": "reply", "attempt": 1, "parsed_ok": false, "reply": "I don't have live access to weather data, but I hope it's a pleasant day wherever you are!\n", "ts": "2026-08-31T23:19:35"}
+{"step": "induced_failure", "event": "retry", "attempt": 1, "reason": "reply contained no parseable JSON object", "ts": "2026-08-31T23:19:35"}
+{"step": "induced_failure", "event": "reply", "attempt": 2, "parsed_ok": true, "reply": "{\"weather\": \"It is sunny and mild today.\"}\n", "ts": "2026-08-31T23:19:42"}

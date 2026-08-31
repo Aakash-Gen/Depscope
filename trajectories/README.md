@@ -54,6 +54,28 @@ checks each against the artifacts: two are **contradicted by measurement**, four
 unverifiable marketing and are struck rather than repeated. The run ends at a human
 checkpoint, because DepScope advises and a person decides.
 
+## A captured retry — `demo_retry_handling.jsonl`
+
+Across the ten evaluation runs the model returned valid JSON on the first attempt
+every time, so **no production trajectory here contains a retry**. Rather than claim
+retry handling without evidence, this session demonstrates it on demand:
+
+```
+[prompt] induced_failure   chars=97
+[reply ] induced_failure   attempt=1   parsed_ok=false
+[retry ] induced_failure   attempt=1   reply contained no parseable JSON object
+[reply ] induced_failure   attempt=2   parsed_ok=true
+```
+
+The first reply was prose, so nothing parsed. The loop appended *"Your previous reply
+could not be parsed. Reply with ONLY a single JSON object"* and tried again; the
+second attempt succeeded. This is the feedback-shapes-the-next-step behaviour in
+miniature — the failure is recorded, the correction is explicit, and the recovery is
+visible rather than silent.
+
+It is labelled `demo_` because the failure was **induced deliberately** (we asked for
+prose from a JSON-only call). It is not a real assessment run.
+
 ## Retries and failure
 
 `llm.ask_json` retries up to three times, appending a corrective instruction when a
