@@ -5,9 +5,13 @@
 It clones a package at a pinned commit, **actually installs it in a clean virtualenv, actually runs its test suite**, measures real coverage, detects assertion-free "coverage theater", mines maintenance risk from git history, and produces an adoption scorecard in which **every single line cites an artifact you can open**.
 
 ```bash
-python3 depscope/pipeline.py repos/humanize                       # one package
-python3 depscope/pipeline.py repos/humanize repos/furl            # head-to-head
+python3 depscope/pipeline.py repos/humanize                    # one package
+python3 depscope/pipeline.py repos/humanize repos/furl         # head-to-head
+python3 depscope/pipeline.py repos/humanize --no-llm           # fully offline
 ```
+
+In a terminal it prints a colour-coded report; piped to a file it emits markdown
+(force either with `--markdown`).
 
 ---
 

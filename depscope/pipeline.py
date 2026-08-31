@@ -7,6 +7,7 @@ from __future__ import annotations
 
 import json
 import re
+import shutil
 import subprocess
 import sys
 from pathlib import Path
@@ -99,6 +100,127 @@ def assess(repo_dir: str, use_llm: bool = True) -> Scorecard:
     return sc
 
 
+# --------------------------------------------------------------------------
+# Terminal rendering
+# --------------------------------------------------------------------------
+
+class C:
+    """ANSI codes, blanked automatically when output is piped to a file."""
+    on = sys.stdout.isatty()
+    def __class_getitem__(cls, code: str) -> str:
+        return code if cls.on else ""
+
+
+R = "\033[0m"
+BOLD = "\033[1m"
+DIM = "\033[2m"
+STRIKE = "\033[9m"
+RED = "\033[91m"
+GREEN = "\033[92m"
+YELLOW = "\033[93m"
+CYAN = "\033[96m"
+GREY = "\033[90m"
+WHITE = "\033[97m"
+
+VERDICT_STYLE = {"ADOPT": (GREEN, "ADOPT"),
+                 "CAUTION": (YELLOW, "CAUTION"),
+                 "AVOID": (RED, "AVOID")}
+SEV_STYLE = {"critical": (RED, "x"), "warn": (YELLOW, "!"), "info": (GREEN, "v")}
+
+
+def _c(s: str) -> str:
+    """Strip colour when not a TTY so piped output stays clean."""
+    return s if C.on else re.sub(r"\033\[[0-9;]*m", "", s)
+
+
+def _bar(score: int, width: int = 10) -> str:
+    filled = round(score / 10 * width)
+    colour = RED if score <= 3 else YELLOW if score <= 6 else GREEN
+    return f"{colour}{'#' * filled}{GREY}{'.' * (width - filled)}{R}"
+
+
+def _wrap(text: str, width: int, indent: str) -> str:
+    words, lines, cur = text.split(), [], ""
+    for w in words:
+        if len(cur) + len(w) + 1 > width:
+            lines.append(cur)
+            cur = w
+        else:
+            cur = f"{cur} {w}".strip()
+    lines.append(cur)
+    return f"\n{indent}".join(lines)
+
+
+def render_terminal(sc: Scorecard) -> str:
+    width = min(shutil.get_terminal_size((100, 24)).columns, 100)
+    colour, label = VERDICT_STYLE[sc.verdict]
+    out: list[str] = []
+
+    rule = "-" * width
+    out.append(f"{BOLD}{CYAN}DepScope{R}  {BOLD}{WHITE}{sc.package}{R}"
+               f"{GREY}   commit {sc.commit}{R}")
+    out.append(f"{GREY}{rule}{R}")
+    out.append(f"  {colour}{BOLD}VERDICT: {label}{R}"
+               f"{GREY}{'overall ' + str(sc.overall) + '/10':>{max(0, width - 22 - len(label))}}{R}")
+    out.append("")
+
+    out.append(f"  {BOLD}EVIDENCE{R} {GREY}(every line cites a log you can open){R}")
+    for f in sorted(sc.findings, key=lambda x: x.score):
+        sev_colour, mark = SEV_STYLE[f.severity]
+        # visible width of the header: 2 + 1 + 1 + 15 + 10 + 1 + 5 + 2
+        pad = 37
+        head = (f"  {sev_colour}{mark}{R} {BOLD}{f.dimension:<15}{R}"
+                f"{_bar(f.score)} {f.score:>2}/10  ")
+        out.append(head + _wrap(f.statement, max(24, width - pad), " " * pad))
+        out.append(f"{GREY}{' ' * pad}-> {f.citation}{R}")
+    out.append("")
+
+    if sc.mismatches:
+        out.append(f"  {BOLD}{RED}README SAYS  vs  REALITY{R}")
+        for m in sc.mismatches:
+            out.append(f"    {GREY}claims{R}  {m['claimed']}")
+            out.append(f"    {RED}{BOLD}truth {R}  {RED}{m['measured']}{R}"
+                       f"   {GREY}({m['citation']}){R}")
+            out.append("")
+
+    if sc.rejected_claims:
+        out.append(f"  {BOLD}CLAIMS DROPPED{R} {GREY}- no artifact could confirm these{R}")
+        for r in sc.rejected_claims[:6]:
+            out.append(f"    {GREY}{STRIKE}{r['claim']}{R}")
+        out.append("")
+
+    out.append(f"{GREY}{rule}{R}")
+    out.append(f"{GREY}  Advisory only - a developer signs off before adoption.{R}")
+    return _c("\n".join(out))
+
+
+def head_to_head_terminal(cards: list[Scorecard]) -> str:
+    width = min(shutil.get_terminal_size((100, 24)).columns, 100)
+    dims = ["Clean install", "Tests pass", "Coverage", "Test strength", "Maintenance"]
+    short = {"Clean install": "install", "Tests pass": "tests", "Coverage": "cover",
+             "Test strength": "strength", "Maintenance": "maint"}
+    out = ["", f"{BOLD}{CYAN}HEAD-TO-HEAD{R}", f"{GREY}{'-' * width}{R}"]
+    hdr = f"  {'package':<14}{'verdict':<10}{'score':<8}" + "".join(
+        f"{short[d]:<10}" for d in dims)
+    out.append(f"{BOLD}{hdr}{R}")
+    for sc in sorted(cards, key=lambda c: -c.overall):
+        g = {f.dimension: f for f in sc.findings}
+        colour, label = VERDICT_STYLE[sc.verdict]
+        row = f"  {BOLD}{sc.package:<14}{R}{colour}{label:<10}{R}{sc.overall:<8}"
+        for d in dims:
+            f = g.get(d)
+            if not f:
+                row += f"{GREY}{'-':<10}{R}"
+            else:
+                sc_col = RED if f.score <= 3 else YELLOW if f.score <= 6 else GREEN
+                row += f"{sc_col}{str(f.score) + '/10':<10}{R}"
+        out.append(row)
+    best = max(cards, key=lambda c: c.overall)
+    out += ["", f"  {GREEN}{BOLD}Recommended: {best.package}{R}"
+                f"{GREY}  (highest evidence-backed score, verdict {best.verdict}){R}", ""]
+    return _c("\n".join(out))
+
+
 def render(sc: Scorecard) -> str:
     icon = {"ADOPT": "ADOPT", "CAUTION": "CAUTION", "AVOID": "AVOID"}[sc.verdict]
     lines = [f"# Adoption scorecard: {sc.package}",
@@ -138,23 +260,26 @@ def head_to_head(cards: list[Scorecard]) -> str:
 
 USAGE = """DepScope - evidence-based dependency due-diligence
 
-  python3 depscope/pipeline.py <repo> [<repo> ...] [--no-llm]
+  python3 depscope/pipeline.py <repo> [<repo> ...] [--no-llm] [--markdown]
 
-  <repo>     path to a checked-out package (see REPRODUCE.md for the corpus)
-  --no-llm   skip README claim extraction; runs fully offline with no model calls
-             (the probe, history miner and scorer are deterministic and need no LLM)
+  <repo>      path to a checked-out package (see REPRODUCE.md for the corpus)
+  --no-llm    skip README claim extraction; runs fully offline with no model calls
+              (the probe, history miner and scorer are deterministic and need no LLM)
+  --markdown  emit the markdown report instead of the formatted terminal view
+              (also the default when output is piped to a file)
 
-Two or more repos produce a head-to-head comparison table.
+Two or more repos produce a head-to-head comparison.
 """
 
 if __name__ == "__main__":
     args = [a for a in sys.argv[1:] if not a.startswith("-")]
     use_llm = "--no-llm" not in sys.argv
+    as_md = "--markdown" in sys.argv or not sys.stdout.isatty()
     if not args:
         print(USAGE)
         sys.exit(1)
     cards = [assess(t, use_llm=use_llm) for t in args]
     for sc in cards:
-        print(render(sc), "\n")
+        print(render(sc) if as_md else render_terminal(sc), "\n")
     if len(cards) > 1:
-        print(head_to_head(cards))
+        print(head_to_head(cards) if as_md else head_to_head_terminal(cards))

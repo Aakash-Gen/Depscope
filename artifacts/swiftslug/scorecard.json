@@ -1,6 +1,6 @@
 {
   "package": "swiftslug",
-  "commit": "dd5ab7a62325",
+  "commit": "353686d34c7a",
   "verdict": "AVOID",
   "overall": 6.7,
   "findings": [
@@ -35,7 +35,7 @@
     {
       "dimension": "Maintenance",
       "score": 6,
-      "statement": "Slow: last commit 235 days ago; 16 commits in the last year.",
+      "statement": "Slow: last commit 236 days ago; 16 commits in the last year.",
       "citation": "artifacts/swiftslug/06_history.log",
       "severity": "warn"
     },
@@ -47,36 +47,6 @@
       "severity": "warn"
     }
   ],
-  "mismatches": [
-    {
-      "claim": "build passing badge / green on every commit",
-      "claimed": "test suite is green",
-      "measured": "1 failing test(s)",
-      "citation": "artifacts/swiftslug/04_tests.log"
-    },
-    {
-      "claim": "98% coverage / 98% test-covered",
-      "claimed": "98% coverage",
-      "measured": "88% coverage",
-      "citation": "artifacts/swiftslug/05_coverage.log"
-    }
-  ],
-  "rejected_claims": [
-    {
-      "claim": "downloads 2.1M/month",
-      "reason": "no artifact can verify this claim"
-    },
-    {
-      "claim": "Bulletproof unicode slugification for URLs and filenames",
-      "reason": "no artifact can verify this claim"
-    },
-    {
-      "claim": "battle-tested across Python 3.8-3.12",
-      "reason": "no artifact can verify this claim"
-    },
-    {
-      "claim": "public API has been stable since 1.0",
-      "reason": "no artifact can verify this claim"
-    }
-  ]
+  "mismatches": [],
+  "rejected_claims": []
 }

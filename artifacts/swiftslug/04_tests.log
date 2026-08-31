@@ -20,7 +20,7 @@ E       + kompiuter
 test.py:55: AssertionError
 =========================== short test summary info ============================
 FAILED test.py::TestSlugify::test_cyrillic_text - AssertionError: 'komp-iuter...
-1 failed, 80 passed in 0.06s
+1 failed, 80 passed in 0.07s
 
 ----------------------------------------------------------------------
 exit=1 duration=0.4s

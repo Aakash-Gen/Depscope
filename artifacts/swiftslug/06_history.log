@@ -4,7 +4,7 @@ total_commits=289
 contributors=41
 bus_factor=1 (devs owning >=50% of commits)
 top_author_share=0.588
-last_commit=2026-01-07 (235 days ago)
+last_commit=2026-01-07 (236 days ago)
 commits_last_year=16
 releases=48
 last_release=v8.0.4 (2024-02-08)
