@@ -1,0 +1,18 @@
+$ /Users/agen/Micro1/depscope/repos/python-dotenv/.depscope_venv/bin/python -m coverage report
+(cwd=/Users/agen/Micro1/depscope/repos/python-dotenv)
+----------------------------------------------------------------------
+Name                                                             Stmts   Miss  Cover   Missing
+----------------------------------------------------------------------------------------------
+.depscope_venv/lib/python3.9/site-packages/dotenv/__init__.py       21      0   100%
+.depscope_venv/lib/python3.9/site-packages/dotenv/__main__.py        3      3     0%   3-6
+.depscope_venv/lib/python3.9/site-packages/dotenv/cli.py           106     17    84%   11-14, 28-29, 105, 155-165, 189-199
+.depscope_venv/lib/python3.9/site-packages/dotenv/ipython.py        21      3    86%   29-31
+.depscope_venv/lib/python3.9/site-packages/dotenv/main.py          179      7    96%   28, 167, 262, 265, 290-291, 383
+.depscope_venv/lib/python3.9/site-packages/dotenv/parser.py        117      5    96%   84-88
+.depscope_venv/lib/python3.9/site-packages/dotenv/variables.py      54     10    81%   20-23, 34, 38, 42, 54, 58, 62
+.depscope_venv/lib/python3.9/site-packages/dotenv/version.py         1      0   100%
+----------------------------------------------------------------------------------------------
+TOTAL                                                              502     45    91%
+
+----------------------------------------------------------------------
+exit=0 duration=0.1s

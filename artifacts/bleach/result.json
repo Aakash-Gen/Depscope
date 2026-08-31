@@ -1,0 +1,52 @@
+{
+  "repo": "bleach",
+  "commit": "6cd4d527a6b4",
+  "installed": true,
+  "tests_ran": true,
+  "tests_passed": 414,
+  "tests_failed": 0,
+  "tests_errored": 0,
+  "coverage_pct": 42.0,
+  "assertion_density": 1.41,
+  "notes": [
+    "installed test extra '[dev]'"
+  ],
+  "artifacts": [
+    {
+      "name": "01_venv",
+      "path": "/Users/agen/Micro1/depscope/artifacts/bleach/01_venv.log",
+      "exit_code": 0,
+      "duration_s": 1.3612470626831055
+    },
+    {
+      "name": "02_install",
+      "path": "/Users/agen/Micro1/depscope/artifacts/bleach/02_install.log",
+      "exit_code": 0,
+      "duration_s": 0.7334761619567871
+    },
+    {
+      "name": "03_testdeps",
+      "path": "/Users/agen/Micro1/depscope/artifacts/bleach/03_testdeps.log",
+      "exit_code": 0,
+      "duration_s": 2.3289897441864014
+    },
+    {
+      "name": "03b_extra_dev",
+      "path": "/Users/agen/Micro1/depscope/artifacts/bleach/03b_extra_dev.log",
+      "exit_code": 0,
+      "duration_s": 9.689343929290771
+    },
+    {
+      "name": "04_tests",
+      "path": "/Users/agen/Micro1/depscope/artifacts/bleach/04_tests.log",
+      "exit_code": 0,
+      "duration_s": 0.8482649326324463
+    },
+    {
+      "name": "05_coverage",
+      "path": "/Users/agen/Micro1/depscope/artifacts/bleach/05_coverage.log",
+      "exit_code": 0,
+      "duration_s": 0.3898470401763916
+    }
+  ]
+}

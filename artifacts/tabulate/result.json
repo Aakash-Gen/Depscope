@@ -1,0 +1,44 @@
+{
+  "repo": "tabulate",
+  "commit": "bf58e37e6b35",
+  "installed": true,
+  "tests_ran": true,
+  "tests_passed": 247,
+  "tests_failed": 0,
+  "tests_errored": 0,
+  "coverage_pct": 85.0,
+  "assertion_density": 1.06,
+  "notes": [],
+  "artifacts": [
+    {
+      "name": "01_venv",
+      "path": "/Users/agen/Micro1/depscope/artifacts/tabulate/01_venv.log",
+      "exit_code": 0,
+      "duration_s": 1.3154780864715576
+    },
+    {
+      "name": "02_install",
+      "path": "/Users/agen/Micro1/depscope/artifacts/tabulate/02_install.log",
+      "exit_code": 0,
+      "duration_s": 2.610722064971924
+    },
+    {
+      "name": "03_testdeps",
+      "path": "/Users/agen/Micro1/depscope/artifacts/tabulate/03_testdeps.log",
+      "exit_code": 0,
+      "duration_s": 2.371326208114624
+    },
+    {
+      "name": "04_tests",
+      "path": "/Users/agen/Micro1/depscope/artifacts/tabulate/04_tests.log",
+      "exit_code": 0,
+      "duration_s": 0.8736109733581543
+    },
+    {
+      "name": "05_coverage",
+      "path": "/Users/agen/Micro1/depscope/artifacts/tabulate/05_coverage.log",
+      "exit_code": 0,
+      "duration_s": 0.10887503623962402
+    }
+  ]
+}

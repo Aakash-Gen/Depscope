@@ -1,0 +1,44 @@
+{
+  "repo": "furl",
+  "commit": "10da29f03949",
+  "installed": true,
+  "tests_ran": true,
+  "tests_passed": 78,
+  "tests_failed": 0,
+  "tests_errored": 0,
+  "coverage_pct": 96.0,
+  "assertion_density": 10.77,
+  "notes": [],
+  "artifacts": [
+    {
+      "name": "01_venv",
+      "path": "/Users/agen/Micro1/depscope/artifacts/furl/01_venv.log",
+      "exit_code": 0,
+      "duration_s": 1.316356897354126
+    },
+    {
+      "name": "02_install",
+      "path": "/Users/agen/Micro1/depscope/artifacts/furl/02_install.log",
+      "exit_code": 0,
+      "duration_s": 0.6773030757904053
+    },
+    {
+      "name": "03_testdeps",
+      "path": "/Users/agen/Micro1/depscope/artifacts/furl/03_testdeps.log",
+      "exit_code": 0,
+      "duration_s": 2.3655428886413574
+    },
+    {
+      "name": "04_tests",
+      "path": "/Users/agen/Micro1/depscope/artifacts/furl/04_tests.log",
+      "exit_code": 0,
+      "duration_s": 7.698383092880249
+    },
+    {
+      "name": "05_coverage",
+      "path": "/Users/agen/Micro1/depscope/artifacts/furl/05_coverage.log",
+      "exit_code": 0,
+      "duration_s": 0.1027672290802002
+    }
+  ]
+}

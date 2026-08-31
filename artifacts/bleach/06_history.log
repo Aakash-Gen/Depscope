@@ -1,0 +1,21 @@
+$ git log/tag analysis for bleach
+----------------------------------------------------------------------
+total_commits=962
+contributors=81
+bus_factor=2 (devs owning >=50% of commits)
+top_author_share=0.48
+last_commit=2026-06-05 (87 days ago)
+commits_last_year=31
+releases=64
+last_release=v6.4.0 (2026-06-05)
+days_since_last_release=87
+
+top authors:
+  Will Kahn-Greene: 462
+  James Socol: 182
+  Greg Guthe: 133
+  mdxs: 20
+  Marc DM: 17
+  dependabot[bot]: 12
+  Jon Dufresne: 11
+  Marc Abramowitz: 10

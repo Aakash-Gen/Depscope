@@ -1,0 +1,14 @@
+# Third-party clones — judges fetch these via REPRODUCE.md §2 (21MB, not ours to vendor)
+repos/
+# Constructed trap packages — generated locally by traps/build_traps.py.
+# Deliberately NOT published: they are renamed, doctored copies of real MIT/BSD
+# packages, and republishing them would strip attribution and put misleading
+# versions of other people's work on GitHub.
+trap_repos/
+
+# environments / caches
+.venv/
+.depscope_venv/
+__pycache__/
+*.pyc
+.pytest_cache/

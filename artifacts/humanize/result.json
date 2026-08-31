@@ -1,0 +1,52 @@
+{
+  "repo": "humanize",
+  "commit": "35e2d21b4b30",
+  "installed": true,
+  "tests_ran": true,
+  "tests_passed": 527,
+  "tests_failed": 0,
+  "tests_errored": 0,
+  "coverage_pct": 98.0,
+  "assertion_density": 1.85,
+  "notes": [
+    "installed test extra '[tests]'"
+  ],
+  "artifacts": [
+    {
+      "name": "01_venv",
+      "path": "/Users/agen/Micro1/depscope/artifacts/humanize/01_venv.log",
+      "exit_code": 0,
+      "duration_s": 1.313871145248413
+    },
+    {
+      "name": "02_install",
+      "path": "/Users/agen/Micro1/depscope/artifacts/humanize/02_install.log",
+      "exit_code": 0,
+      "duration_s": 2.8949177265167236
+    },
+    {
+      "name": "03_testdeps",
+      "path": "/Users/agen/Micro1/depscope/artifacts/humanize/03_testdeps.log",
+      "exit_code": 0,
+      "duration_s": 2.325275182723999
+    },
+    {
+      "name": "03b_extra_tests",
+      "path": "/Users/agen/Micro1/depscope/artifacts/humanize/03b_extra_tests.log",
+      "exit_code": 0,
+      "duration_s": 2.952376127243042
+    },
+    {
+      "name": "04_tests",
+      "path": "/Users/agen/Micro1/depscope/artifacts/humanize/04_tests.log",
+      "exit_code": 0,
+      "duration_s": 1.4092941284179688
+    },
+    {
+      "name": "05_coverage",
+      "path": "/Users/agen/Micro1/depscope/artifacts/humanize/05_coverage.log",
+      "exit_code": 0,
+      "duration_s": 0.08669090270996094
+    }
+  ]
+}

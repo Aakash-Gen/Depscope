@@ -1,0 +1,19 @@
+{
+  "repo": "bleach",
+  "total_commits": 962,
+  "contributors": 81,
+  "bus_factor": 2,
+  "top_author_share": 0.48,
+  "last_commit_date": "2026-06-05",
+  "days_since_last_commit": 87,
+  "commits_last_year": 31,
+  "releases": 64,
+  "last_release": "v6.4.0 (2026-06-05)",
+  "days_since_last_release": 87,
+  "artifacts": [
+    {
+      "name": "06_history",
+      "path": "/Users/agen/Micro1/depscope/artifacts/bleach/06_history.log"
+    }
+  ]
+}

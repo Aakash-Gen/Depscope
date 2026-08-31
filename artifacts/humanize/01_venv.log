@@ -1,0 +1,6 @@
+$ /Library/Developer/CommandLineTools/usr/bin/python3 -m venv /Users/agen/Micro1/depscope/repos/humanize/.depscope_venv
+(cwd=/Users/agen/Micro1/depscope/repos/humanize)
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+exit=0 duration=1.3s

@@ -1,0 +1,57 @@
+{
+  "package": "tabulate",
+  "commit": "bf58e37e6b35",
+  "verdict": "CAUTION",
+  "overall": 8.8,
+  "findings": [
+    {
+      "dimension": "Clean install",
+      "score": 10,
+      "statement": "Installs successfully from source in a fresh virtualenv.",
+      "citation": "artifacts/tabulate/02_install.log",
+      "severity": "info"
+    },
+    {
+      "dimension": "Tests pass",
+      "score": 10,
+      "statement": "All 247 tests pass in a clean environment.",
+      "citation": "artifacts/tabulate/04_tests.log",
+      "severity": "info"
+    },
+    {
+      "dimension": "Coverage",
+      "score": 10,
+      "statement": "Measured coverage 85%.",
+      "citation": "artifacts/tabulate/05_coverage.log",
+      "severity": "info"
+    },
+    {
+      "dimension": "Test strength",
+      "score": 10,
+      "statement": "Tests assert meaningfully (1.06 assertions per test function).",
+      "citation": "artifacts/tabulate/04_tests.log",
+      "severity": "info"
+    },
+    {
+      "dimension": "Maintenance",
+      "score": 10,
+      "statement": "Actively maintained: last commit 173 days ago, 118 commits in the last year.",
+      "citation": "artifacts/tabulate/06_history.log",
+      "severity": "info"
+    },
+    {
+      "dimension": "Bus factor",
+      "score": 3,
+      "statement": "Bus factor 1 - a single contributor authored 65% of all commits.",
+      "citation": "artifacts/tabulate/06_history.log",
+      "severity": "warn"
+    }
+  ],
+  "mismatches": [],
+  "rejected_claims": [
+    {
+      "claim": "printing small tables without hassle: just one function call, formatting is guided by the data itself",
+      "reason": "no artifact can verify this claim"
+    }
+  ]
+}

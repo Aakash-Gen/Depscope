@@ -1,0 +1,19 @@
+{
+  "repo": "retrying",
+  "total_commits": 95,
+  "contributors": 15,
+  "bus_factor": 1,
+  "top_author_share": 0.8,
+  "last_commit_date": "2016-06-06",
+  "days_since_last_commit": 3737,
+  "commits_last_year": 0,
+  "releases": 10,
+  "last_release": "v1.3.3 (2014-12-14)",
+  "days_since_last_release": 4278,
+  "artifacts": [
+    {
+      "name": "06_history",
+      "path": "/Users/agen/Micro1/depscope/artifacts/retrying/06_history.log"
+    }
+  ]
+}

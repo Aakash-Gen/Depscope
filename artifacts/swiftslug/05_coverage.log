@@ -1,0 +1,15 @@
+$ /Users/agen/Micro1/depscope/trap_repos/swiftslug/.depscope_venv/bin/python -m coverage report
+(cwd=/Users/agen/Micro1/depscope/trap_repos/swiftslug)
+----------------------------------------------------------------------
+Name                     Stmts   Miss  Cover
+--------------------------------------------
+slugify/__init__.py          2      0   100%
+slugify/__main__.py         40      0   100%
+slugify/__version__.py       8      8     0%
+slugify/slugify.py          91     10    89%
+slugify/special.py          14      0   100%
+--------------------------------------------
+TOTAL                      155     18    88%
+
+----------------------------------------------------------------------
+exit=0 duration=0.1s

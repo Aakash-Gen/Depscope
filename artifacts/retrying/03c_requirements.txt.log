@@ -1,0 +1,6 @@
+$ /Users/agen/Micro1/depscope/repos/retrying/.depscope_venv/bin/python -m pip install --quiet --disable-pip-version-check -r requirements.txt
+(cwd=/Users/agen/Micro1/depscope/repos/retrying)
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+exit=0 duration=0.2s

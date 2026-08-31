@@ -1,0 +1,14 @@
+Implement a Python module `solution.py` with these 5 functions. Meet EVERY requirement.
+
+slugify(s): lowercase; convert to ASCII (strip accents: é->e); replace any run of
+  non-alphanumeric chars with a single '-'; strip leading/trailing '-'; "" -> "".
+truncate(s, n): if len(s)<=n return s unchanged; else cut to fit within n chars
+  INCLUDING a trailing "..." , breaking at a word boundary (no partial word),
+  e.g. truncate("hello world",8)=="hello...".
+parse_ints(s): split on commas; return list of ints; skip blank/whitespace items;
+  skip non-integer items; support negatives.
+titlecase(s): capitalize each word EXCEPT small words (a,an,the,of,and,or,in,on,to,
+  for,with) which stay lowercase — BUT the first word is always capitalized.
+wordcount(s): number of whitespace-separated words; "   " -> 0.
+
+Output ONLY JSON: {"code":"<full solution.py>","claim":"<one line: did you meet ALL requirements?>"}

@@ -1,0 +1,61 @@
+{
+  "package": "python-dotenv",
+  "commit": "d6c0b9638349",
+  "verdict": "ADOPT",
+  "overall": 9.5,
+  "findings": [
+    {
+      "dimension": "Clean install",
+      "score": 10,
+      "statement": "Installs successfully from source in a fresh virtualenv.",
+      "citation": "artifacts/python-dotenv/02_install.log",
+      "severity": "info"
+    },
+    {
+      "dimension": "Tests pass",
+      "score": 10,
+      "statement": "All 152 tests pass in a clean environment.",
+      "citation": "artifacts/python-dotenv/04_tests.log",
+      "severity": "info"
+    },
+    {
+      "dimension": "Coverage",
+      "score": 10,
+      "statement": "Measured coverage 91%.",
+      "citation": "artifacts/python-dotenv/05_coverage.log",
+      "severity": "info"
+    },
+    {
+      "dimension": "Test strength",
+      "score": 10,
+      "statement": "Tests assert meaningfully (1.72 assertions per test function).",
+      "citation": "artifacts/python-dotenv/04_tests.log",
+      "severity": "info"
+    },
+    {
+      "dimension": "Maintenance",
+      "score": 10,
+      "statement": "Actively maintained: last commit 14 days ago, 52 commits in the last year.",
+      "citation": "artifacts/python-dotenv/06_history.log",
+      "severity": "info"
+    },
+    {
+      "dimension": "Bus factor",
+      "score": 7,
+      "statement": "Bus factor 2 across 112 contributors.",
+      "citation": "artifacts/python-dotenv/06_history.log",
+      "severity": "info"
+    }
+  ],
+  "mismatches": [],
+  "rejected_claims": [
+    {
+      "claim": "A CLI interface `dotenv` is also included, which helps you manipulate the `.env` file without manually opening it.",
+      "reason": "no artifact can verify this claim"
+    },
+    {
+      "claim": "It helps in the development of applications following the 12-factor principles.",
+      "reason": "no artifact can verify this claim"
+    }
+  ]
+}

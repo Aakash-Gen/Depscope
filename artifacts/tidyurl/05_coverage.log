@@ -1,0 +1,16 @@
+$ /Users/agen/Micro1/depscope/trap_repos/tidyurl/.depscope_venv/bin/python -m coverage report
+(cwd=/Users/agen/Micro1/depscope/trap_repos/tidyurl)
+----------------------------------------------------------------------
+Name                  Stmts   Miss  Cover
+-----------------------------------------
+furl/__init__.py          2      0   100%
+furl/__version__.py       8      0   100%
+furl/common.py            6      0   100%
+furl/compat.py           13      4    69%
+furl/furl.py            775    266    66%
+furl/omdict1D.py         37      6    84%
+-----------------------------------------
+TOTAL                   841    276    67%
+
+----------------------------------------------------------------------
+exit=0 duration=0.1s

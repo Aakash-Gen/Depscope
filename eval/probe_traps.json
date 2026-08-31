@@ -1,0 +1,40 @@
+{
+  "fasttable": {
+    "repo": "fasttable",
+    "commit": "fd47c0f72311",
+    "installed": false,
+    "tests_ran": true,
+    "tests_passed": 247,
+    "tests_failed": 0,
+    "tests_errored": 0,
+    "coverage_pct": 85.0,
+    "assertion_density": 1.06,
+    "notes": [
+      "package failed to install from source in a clean env"
+    ]
+  },
+  "swiftslug": {
+    "repo": "swiftslug",
+    "commit": "45f62758a989",
+    "installed": true,
+    "tests_ran": true,
+    "tests_passed": 80,
+    "tests_failed": 1,
+    "tests_errored": 0,
+    "coverage_pct": 88.0,
+    "assertion_density": 1.56,
+    "notes": []
+  },
+  "tidyurl": {
+    "repo": "tidyurl",
+    "commit": "bc92d90ab363",
+    "installed": true,
+    "tests_ran": true,
+    "tests_passed": 8,
+    "tests_failed": 0,
+    "tests_errored": 0,
+    "coverage_pct": 67.0,
+    "assertion_density": 0.12,
+    "notes": []
+  }
+}

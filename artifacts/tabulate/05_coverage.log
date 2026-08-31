@@ -1,0 +1,11 @@
+$ /Users/agen/Micro1/depscope/repos/tabulate/.depscope_venv/bin/python -m coverage report
+(cwd=/Users/agen/Micro1/depscope/repos/tabulate)
+----------------------------------------------------------------------
+Name                   Stmts   Miss  Cover
+------------------------------------------
+tabulate/__init__.py     794    117    85%
+------------------------------------------
+TOTAL                    794    117    85%
+
+----------------------------------------------------------------------
+exit=0 duration=0.1s

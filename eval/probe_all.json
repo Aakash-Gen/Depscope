@@ -1,0 +1,94 @@
+{
+  "bleach": {
+    "repo": "bleach",
+    "commit": "6cd4d527a6b4",
+    "installed": true,
+    "tests_ran": true,
+    "tests_passed": 414,
+    "tests_failed": 0,
+    "tests_errored": 0,
+    "coverage_pct": 42.0,
+    "assertion_density": 1.41,
+    "notes": [
+      "installed test extra '[dev]'"
+    ]
+  },
+  "furl": {
+    "repo": "furl",
+    "commit": "10da29f03949",
+    "installed": true,
+    "tests_ran": true,
+    "tests_passed": 78,
+    "tests_failed": 0,
+    "tests_errored": 0,
+    "coverage_pct": 96.0,
+    "assertion_density": 10.77,
+    "notes": []
+  },
+  "humanize": {
+    "repo": "humanize",
+    "commit": "35e2d21b4b30",
+    "installed": true,
+    "tests_ran": true,
+    "tests_passed": 527,
+    "tests_failed": 0,
+    "tests_errored": 0,
+    "coverage_pct": 93.0,
+    "assertion_density": 1.85,
+    "notes": [
+      "installed test extra '[tests]'"
+    ]
+  },
+  "python-dotenv": {
+    "repo": "python-dotenv",
+    "commit": "d6c0b9638349",
+    "installed": true,
+    "tests_ran": true,
+    "tests_passed": 146,
+    "tests_failed": 6,
+    "tests_errored": 0,
+    "coverage_pct": null,
+    "assertion_density": 1.72,
+    "notes": [
+      "installed requirements.txt"
+    ]
+  },
+  "python-slugify": {
+    "repo": "python-slugify",
+    "commit": "3f1a0fe7c577",
+    "installed": true,
+    "tests_ran": true,
+    "tests_passed": 81,
+    "tests_failed": 0,
+    "tests_errored": 0,
+    "coverage_pct": 88.0,
+    "assertion_density": 1.56,
+    "notes": []
+  },
+  "retrying": {
+    "repo": "retrying",
+    "commit": "3659c70b1f0d",
+    "installed": true,
+    "tests_ran": true,
+    "tests_passed": 21,
+    "tests_failed": 0,
+    "tests_errored": 0,
+    "coverage_pct": 92.0,
+    "assertion_density": 4.14,
+    "notes": [
+      "installed requirements.txt"
+    ]
+  },
+  "tabulate": {
+    "repo": "tabulate",
+    "commit": "bf58e37e6b35",
+    "installed": true,
+    "tests_ran": true,
+    "tests_passed": 247,
+    "tests_failed": 0,
+    "tests_errored": 0,
+    "coverage_pct": 85.0,
+    "assertion_density": 1.06,
+    "notes": []
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "repo": "retrying",
+  "commit": "3659c70b1f0d",
+  "installed": true,
+  "tests_ran": true,
+  "tests_passed": 21,
+  "tests_failed": 0,
+  "tests_errored": 0,
+  "coverage_pct": 92.0,
+  "assertion_density": 4.14,
+  "notes": [
+    "installed requirements.txt"
+  ],
+  "artifacts": [
+    {
+      "name": "01_venv",
+      "path": "/Users/agen/Micro1/depscope/artifacts/retrying/01_venv.log",
+      "exit_code": 0,
+      "duration_s": 1.317868709564209
+    },
+    {
+      "name": "02_install",
+      "path": "/Users/agen/Micro1/depscope/artifacts/retrying/02_install.log",
+      "exit_code": 0,
+      "duration_s": 0.572486162185669
+    },
+    {
+      "name": "03_testdeps",
+      "path": "/Users/agen/Micro1/depscope/artifacts/retrying/03_testdeps.log",
+      "exit_code": 0,
+      "duration_s": 2.289016008377075
+    },
+    {
+      "name": "03c_requirements.txt",
+      "path": "/Users/agen/Micro1/depscope/artifacts/retrying/03c_requirements.txt.log",
+      "exit_code": 0,
+      "duration_s": 0.170745849609375
+    },
+    {
+      "name": "04_tests",
+      "path": "/Users/agen/Micro1/depscope/artifacts/retrying/04_tests.log",
+      "exit_code": 0,
+      "duration_s": 0.6743559837341309
+    },
+    {
+      "name": "05_coverage",
+      "path": "/Users/agen/Micro1/depscope/artifacts/retrying/05_coverage.log",
+      "exit_code": 0,
+      "duration_s": 0.08381915092468262
+    }
+  ]
+}

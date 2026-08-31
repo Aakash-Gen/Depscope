@@ -1,0 +1,21 @@
+$ git log/tag analysis for humanize
+----------------------------------------------------------------------
+total_commits=1074
+contributors=131
+bus_factor=2 (devs owning >=50% of commits)
+top_author_share=0.492
+last_commit=2026-08-29 (1 days ago)
+commits_last_year=86
+releases=58
+last_release=4.16.0 (2026-06-30)
+days_since_last_release=62
+
+top authors:
+  Hugo van Kemenade: 528
+  Hugo: 121
+  renovate[bot]: 83
+  Jason Moiron: 34
+  pre-commit-ci[bot]: 33
+  Daniel Gillet: 14
+  The-Debarghya: 14
+  Martin Di Paola: 14

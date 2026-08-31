@@ -1,0 +1,6 @@
+$ /Users/agen/Micro1/depscope/repos/furl/.depscope_venv/bin/python -m pip install --quiet --disable-pip-version-check pytest coverage
+(cwd=/Users/agen/Micro1/depscope/repos/furl)
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+exit=0 duration=2.4s

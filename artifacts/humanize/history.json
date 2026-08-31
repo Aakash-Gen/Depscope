@@ -1,0 +1,19 @@
+{
+  "repo": "humanize",
+  "total_commits": 1074,
+  "contributors": 131,
+  "bus_factor": 2,
+  "top_author_share": 0.492,
+  "last_commit_date": "2026-08-29",
+  "days_since_last_commit": 1,
+  "commits_last_year": 86,
+  "releases": 58,
+  "last_release": "4.16.0 (2026-06-30)",
+  "days_since_last_release": 62,
+  "artifacts": [
+    {
+      "name": "06_history",
+      "path": "/Users/agen/Micro1/depscope/artifacts/humanize/06_history.log"
+    }
+  ]
+}

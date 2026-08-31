@@ -1,0 +1,82 @@
+{
+  "package": "swiftslug",
+  "commit": "dd5ab7a62325",
+  "verdict": "AVOID",
+  "overall": 6.7,
+  "findings": [
+    {
+      "dimension": "Clean install",
+      "score": 10,
+      "statement": "Installs successfully from source in a fresh virtualenv.",
+      "citation": "artifacts/swiftslug/02_install.log",
+      "severity": "info"
+    },
+    {
+      "dimension": "Tests pass",
+      "score": 1,
+      "statement": "1 of 81 tests FAIL at the pinned commit.",
+      "citation": "artifacts/swiftslug/04_tests.log",
+      "severity": "critical"
+    },
+    {
+      "dimension": "Coverage",
+      "score": 10,
+      "statement": "Measured coverage 88%.",
+      "citation": "artifacts/swiftslug/05_coverage.log",
+      "severity": "info"
+    },
+    {
+      "dimension": "Test strength",
+      "score": 10,
+      "statement": "Tests assert meaningfully (1.56 assertions per test function).",
+      "citation": "artifacts/swiftslug/04_tests.log",
+      "severity": "info"
+    },
+    {
+      "dimension": "Maintenance",
+      "score": 6,
+      "statement": "Slow: last commit 235 days ago; 16 commits in the last year.",
+      "citation": "artifacts/swiftslug/06_history.log",
+      "severity": "warn"
+    },
+    {
+      "dimension": "Bus factor",
+      "score": 3,
+      "statement": "Bus factor 1 - a single contributor authored 59% of all commits.",
+      "citation": "artifacts/swiftslug/06_history.log",
+      "severity": "warn"
+    }
+  ],
+  "mismatches": [
+    {
+      "claim": "build passing badge / green on every commit",
+      "claimed": "test suite is green",
+      "measured": "1 failing test(s)",
+      "citation": "artifacts/swiftslug/04_tests.log"
+    },
+    {
+      "claim": "98% coverage / 98% test-covered",
+      "claimed": "98% coverage",
+      "measured": "88% coverage",
+      "citation": "artifacts/swiftslug/05_coverage.log"
+    }
+  ],
+  "rejected_claims": [
+    {
+      "claim": "downloads 2.1M/month",
+      "reason": "no artifact can verify this claim"
+    },
+    {
+      "claim": "Bulletproof unicode slugification for URLs and filenames",
+      "reason": "no artifact can verify this claim"
+    },
+    {
+      "claim": "battle-tested across Python 3.8-3.12",
+      "reason": "no artifact can verify this claim"
+    },
+    {
+      "claim": "public API has been stable since 1.0",
+      "reason": "no artifact can verify this claim"
+    }
+  ]
+}

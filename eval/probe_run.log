@@ -1,0 +1,7 @@
+bleach           install=True  tests=414p/0f/0e cov=42.0 assert_density=1.41
+furl             install=True  tests=78p/0f/0e cov=96.0 assert_density=10.77
+humanize         install=True  tests=527p/0f/0e cov=93.0 assert_density=1.85
+python-dotenv    install=True  tests=146p/6f/0e cov=None assert_density=1.72
+python-slugify   install=True  tests=81p/0f/0e cov=88.0 assert_density=1.56
+retrying         install=True  tests=21p/0f/0e cov=92.0 assert_density=4.14
+tabulate         install=True  tests=247p/0f/0e cov=85.0 assert_density=1.06

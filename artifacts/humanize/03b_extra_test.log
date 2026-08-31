@@ -1,0 +1,9 @@
+$ /Users/agen/Micro1/depscope/repos/humanize/.depscope_venv/bin/python -m pip install --quiet --disable-pip-version-check .[test]
+(cwd=/Users/agen/Micro1/depscope/repos/humanize)
+----------------------------------------------------------------------
+  DEPRECATION: A future pip version will change local packages to be built in-place without first copying to a temporary directory. We recommend you use --use-feature=in-tree-build to test your packages with this new behavior before it becomes the default.
+   pip 21.3 will remove support for this functionality. You can find discussion regarding this at https://github.com/pypa/pip/issues/7555.
+WARNING: humanize 4.9.0 does not provide the extra 'test'
+
+----------------------------------------------------------------------
+exit=0 duration=2.7s

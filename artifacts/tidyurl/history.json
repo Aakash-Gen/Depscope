@@ -1,0 +1,19 @@
+{
+  "repo": "tidyurl",
+  "total_commits": 566,
+  "contributors": 18,
+  "bus_factor": 1,
+  "top_author_share": 0.562,
+  "last_commit_date": "2026-02-21",
+  "days_since_last_commit": 190,
+  "commits_last_year": 3,
+  "releases": 19,
+  "last_release": "v2.1.4 (2025-03-08)",
+  "days_since_last_release": 541,
+  "artifacts": [
+    {
+      "name": "06_history",
+      "path": "/Users/agen/Micro1/depscope/artifacts/tidyurl/06_history.log"
+    }
+  ]
+}

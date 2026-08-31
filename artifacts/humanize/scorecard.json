@@ -1,0 +1,52 @@
+{
+  "package": "humanize",
+  "commit": "35e2d21b4b30",
+  "verdict": "ADOPT",
+  "overall": 9.5,
+  "findings": [
+    {
+      "dimension": "Clean install",
+      "score": 10,
+      "statement": "Installs successfully from source in a fresh virtualenv.",
+      "citation": "artifacts/humanize/02_install.log",
+      "severity": "info"
+    },
+    {
+      "dimension": "Tests pass",
+      "score": 10,
+      "statement": "All 527 tests pass in a clean environment.",
+      "citation": "artifacts/humanize/04_tests.log",
+      "severity": "info"
+    },
+    {
+      "dimension": "Coverage",
+      "score": 10,
+      "statement": "Measured coverage 98%.",
+      "citation": "artifacts/humanize/05_coverage.log",
+      "severity": "info"
+    },
+    {
+      "dimension": "Test strength",
+      "score": 10,
+      "statement": "Tests assert meaningfully (1.85 assertions per test function).",
+      "citation": "artifacts/humanize/04_tests.log",
+      "severity": "info"
+    },
+    {
+      "dimension": "Maintenance",
+      "score": 10,
+      "statement": "Actively maintained: last commit 1 days ago, 86 commits in the last year.",
+      "citation": "artifacts/humanize/06_history.log",
+      "severity": "info"
+    },
+    {
+      "dimension": "Bus factor",
+      "score": 7,
+      "statement": "Bus factor 2 across 131 contributors.",
+      "citation": "artifacts/humanize/06_history.log",
+      "severity": "info"
+    }
+  ],
+  "mismatches": [],
+  "rejected_claims": []
+}

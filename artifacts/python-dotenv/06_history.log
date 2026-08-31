@@ -1,0 +1,21 @@
+$ git log/tag analysis for python-dotenv
+----------------------------------------------------------------------
+total_commits=438
+contributors=112
+bus_factor=2 (devs owning >=50% of commits)
+top_author_share=0.466
+last_commit=2026-08-17 (14 days ago)
+commits_last_year=52
+releases=52
+last_release=v1.2.3 (2026-08-16)
+days_since_last_release=15
+
+top authors:
+  Saurabh Kumar: 204
+  Bertrand Bonnefoy-Claudet: 83
+  dependabot[bot]: 7
+  Hugo Chinchilla Carbonell: 5
+  Scott Searcy: 4
+  Jacob Kaplan-Moss: 4
+  Christian Clauss: 3
+  momohakarish: 3

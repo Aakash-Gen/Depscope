@@ -1,0 +1,70 @@
+{
+  "_rubric": [
+    "Verdicts are assigned by a rubric FIXED IN ADVANCE, applied to objectively",
+    "checkable facts. Every fact below is independently verifiable by opening the",
+    "cited artifact (install log, test log, coverage report, git history) or by",
+    "re-running the probe on a clean machine. The rubric is published so neither",
+    "arm is scored on a moving target.",
+    "",
+    "AVOID   if: install fails in a clean env, OR the test suite has failures,",
+    "            OR the project is abandoned (no commit in > 730 days),",
+    "            OR the suite is coverage theater (assertion density < 0.5).",
+    "CAUTION if: dormant (no commit in > 180 days) OR bus factor 1 OR coverage < 60%.",
+    "ADOPT   otherwise.",
+    "",
+    "Trap packages are labelled by construction: we seeded the defect ourselves",
+    "and documented it in traps/TRAPS.md, so their ground truth is known a priori."
+  ],
+  "packages": {
+    "humanize": {
+      "verdict": "ADOPT",
+      "basis": "installs; 527 tests pass; 98% coverage; last commit 1 day ago; 86 commits/yr; bus factor 2",
+      "source": "measured"
+    },
+    "python-dotenv": {
+      "verdict": "ADOPT",
+      "basis": "installs; 152 tests pass; 91% coverage; active (last commit 14 days); bus factor 2",
+      "source": "measured"
+    },
+    "bleach": {
+      "verdict": "CAUTION",
+      "basis": "installs; 414 tests pass; active (87 days); bus factor 2; BUT measured coverage is only 42%, which the published rubric treats as a material risk (<60%)",
+      "source": "measured"
+    },
+    "tabulate": {
+      "verdict": "CAUTION",
+      "basis": "installs; 247 tests pass; 85% coverage; but bus factor 1 (65% of commits by one author)",
+      "source": "measured"
+    },
+    "python-slugify": {
+      "verdict": "CAUTION",
+      "basis": "installs; 81 tests pass; 88% coverage; but dormant (235 days) and bus factor 1",
+      "source": "measured"
+    },
+    "furl": {
+      "verdict": "CAUTION",
+      "basis": "installs; 78 tests pass; 96% coverage; but dormant (190 days), only 3 commits/yr, bus factor 1",
+      "source": "measured"
+    },
+    "retrying": {
+      "verdict": "AVOID",
+      "basis": "ABANDONED: last commit 2016 (3737 days), 0 commits in the last year, bus factor 1, 80% by one author",
+      "source": "measured"
+    },
+    "swiftslug": {
+      "verdict": "AVOID",
+      "basis": "TRAP (constructed): seeded regression causes a real test failure, while the README claims a green build and 98% coverage",
+      "source": "constructed"
+    },
+    "tidyurl": {
+      "verdict": "AVOID",
+      "basis": "TRAP (constructed): coverage theater - suite executes code but asserts almost nothing (density 0.12) while the README claims a comprehensive 94%-covered suite",
+      "source": "constructed"
+    },
+    "fasttable": {
+      "verdict": "AVOID",
+      "basis": "TRAP (constructed): unresolvable pinned dependency makes clean-env install fail, while the README claims one-command install",
+      "source": "constructed"
+    }
+  }
+}

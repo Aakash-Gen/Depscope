@@ -1,0 +1,44 @@
+{
+  "repo": "python-slugify",
+  "commit": "3f1a0fe7c577",
+  "installed": true,
+  "tests_ran": true,
+  "tests_passed": 81,
+  "tests_failed": 0,
+  "tests_errored": 0,
+  "coverage_pct": 88.0,
+  "assertion_density": 1.56,
+  "notes": [],
+  "artifacts": [
+    {
+      "name": "01_venv",
+      "path": "/Users/agen/Micro1/depscope/artifacts/python-slugify/01_venv.log",
+      "exit_code": 0,
+      "duration_s": 1.3774948120117188
+    },
+    {
+      "name": "02_install",
+      "path": "/Users/agen/Micro1/depscope/artifacts/python-slugify/02_install.log",
+      "exit_code": 0,
+      "duration_s": 0.5988132953643799
+    },
+    {
+      "name": "03_testdeps",
+      "path": "/Users/agen/Micro1/depscope/artifacts/python-slugify/03_testdeps.log",
+      "exit_code": 0,
+      "duration_s": 2.313694953918457
+    },
+    {
+      "name": "04_tests",
+      "path": "/Users/agen/Micro1/depscope/artifacts/python-slugify/04_tests.log",
+      "exit_code": 0,
+      "duration_s": 0.38372206687927246
+    },
+    {
+      "name": "05_coverage",
+      "path": "/Users/agen/Micro1/depscope/artifacts/python-slugify/05_coverage.log",
+      "exit_code": 0,
+      "duration_s": 0.07074427604675293
+    }
+  ]
+}

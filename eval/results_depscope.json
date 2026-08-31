@@ -1,0 +1,92 @@
+{
+  "humanize": {
+    "verdict": "ADOPT",
+    "overall": 9.5,
+    "mismatches": 0,
+    "rejected_claims": 1,
+    "evidence_lines": 6,
+    "cited_lines": 6,
+    "seconds": 25.3
+  },
+  "python-dotenv": {
+    "verdict": "ADOPT",
+    "overall": 9.5,
+    "mismatches": 0,
+    "rejected_claims": 2,
+    "evidence_lines": 6,
+    "cited_lines": 6,
+    "seconds": 21.1
+  },
+  "bleach": {
+    "verdict": "CAUTION",
+    "overall": 8.3,
+    "mismatches": 0,
+    "rejected_claims": 5,
+    "evidence_lines": 6,
+    "cited_lines": 6,
+    "seconds": 26.0
+  },
+  "tabulate": {
+    "verdict": "CAUTION",
+    "overall": 8.8,
+    "mismatches": 0,
+    "rejected_claims": 1,
+    "evidence_lines": 6,
+    "cited_lines": 6,
+    "seconds": 23.1
+  },
+  "python-slugify": {
+    "verdict": "CAUTION",
+    "overall": 8.2,
+    "mismatches": 0,
+    "rejected_claims": 1,
+    "evidence_lines": 6,
+    "cited_lines": 6,
+    "seconds": 12.7
+  },
+  "furl": {
+    "verdict": "CAUTION",
+    "overall": 8.2,
+    "mismatches": 0,
+    "rejected_claims": 2,
+    "evidence_lines": 6,
+    "cited_lines": 6,
+    "seconds": 19.2
+  },
+  "retrying": {
+    "verdict": "AVOID",
+    "overall": 7.2,
+    "mismatches": 0,
+    "rejected_claims": 1,
+    "evidence_lines": 6,
+    "cited_lines": 6,
+    "seconds": 11.9
+  },
+  "swiftslug": {
+    "verdict": "AVOID",
+    "overall": 6.7,
+    "mismatches": 2,
+    "rejected_claims": 4,
+    "evidence_lines": 6,
+    "cited_lines": 6,
+    "seconds": 12.8
+  },
+  "tidyurl": {
+    "verdict": "AVOID",
+    "overall": 6.0,
+    "mismatches": 1,
+    "rejected_claims": 3,
+    "evidence_lines": 6,
+    "cited_lines": 6,
+    "seconds": 12.2
+  },
+  "fasttable": {
+    "verdict": "AVOID",
+    "overall": 7.2,
+    "mismatches": 2,
+    "rejected_claims": 7,
+    "evidence_lines": 6,
+    "cited_lines": 6,
+    "seconds": 24.4
+  }
+}

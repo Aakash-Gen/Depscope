@@ -1,0 +1,44 @@
+{
+  "repo": "tidyurl",
+  "commit": "7a6ea2d843db",
+  "installed": true,
+  "tests_ran": true,
+  "tests_passed": 8,
+  "tests_failed": 0,
+  "tests_errored": 0,
+  "coverage_pct": 67.0,
+  "assertion_density": 0.12,
+  "notes": [],
+  "artifacts": [
+    {
+      "name": "01_venv",
+      "path": "/Users/agen/Micro1/depscope/artifacts/tidyurl/01_venv.log",
+      "exit_code": 0,
+      "duration_s": 1.3278601169586182
+    },
+    {
+      "name": "02_install",
+      "path": "/Users/agen/Micro1/depscope/artifacts/tidyurl/02_install.log",
+      "exit_code": 0,
+      "duration_s": 0.6283602714538574
+    },
+    {
+      "name": "03_testdeps",
+      "path": "/Users/agen/Micro1/depscope/artifacts/tidyurl/03_testdeps.log",
+      "exit_code": 0,
+      "duration_s": 2.3153929710388184
+    },
+    {
+      "name": "04_tests",
+      "path": "/Users/agen/Micro1/depscope/artifacts/tidyurl/04_tests.log",
+      "exit_code": 0,
+      "duration_s": 0.37620091438293457
+    },
+    {
+      "name": "05_coverage",
+      "path": "/Users/agen/Micro1/depscope/artifacts/tidyurl/05_coverage.log",
+      "exit_code": 0,
+      "duration_s": 0.0960390567779541
+    }
+  ]
+}

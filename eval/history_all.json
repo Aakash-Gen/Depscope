@@ -1,0 +1,135 @@
+{
+  "bleach": {
+    "repo": "bleach",
+    "total_commits": 962,
+    "contributors": 81,
+    "bus_factor": 2,
+    "top_author_share": 0.48,
+    "last_commit_date": "2026-06-05",
+    "days_since_last_commit": 86,
+    "commits_last_year": 31,
+    "releases": 64,
+    "last_release": "v6.4.0 (2026-06-05)",
+    "days_since_last_release": 87,
+    "artifacts": [
+      {
+        "name": "06_history",
+        "path": "/Users/agen/Micro1/depscope/artifacts/bleach/06_history.log"
+      }
+    ]
+  },
+  "furl": {
+    "repo": "furl",
+    "total_commits": 566,
+    "contributors": 18,
+    "bus_factor": 1,
+    "top_author_share": 0.562,
+    "last_commit_date": "2026-02-21",
+    "days_since_last_commit": 190,
+    "commits_last_year": 3,
+    "releases": 19,
+    "last_release": "v2.1.4 (2025-03-08)",
+    "days_since_last_release": 541,
+    "artifacts": [
+      {
+        "name": "06_history",
+        "path": "/Users/agen/Micro1/depscope/artifacts/furl/06_history.log"
+      }
+    ]
+  },
+  "humanize": {
+    "repo": "humanize",
+    "total_commits": 1074,
+    "contributors": 131,
+    "bus_factor": 2,
+    "top_author_share": 0.492,
+    "last_commit_date": "2026-08-29",
+    "days_since_last_commit": 1,
+    "commits_last_year": 86,
+    "releases": 58,
+    "last_release": "4.16.0 (2026-06-30)",
+    "days_since_last_release": 62,
+    "artifacts": [
+      {
+        "name": "06_history",
+        "path": "/Users/agen/Micro1/depscope/artifacts/humanize/06_history.log"
+      }
+    ]
+  },
+  "python-dotenv": {
+    "repo": "python-dotenv",
+    "total_commits": 438,
+    "contributors": 112,
+    "bus_factor": 2,
+    "top_author_share": 0.466,
+    "last_commit_date": "2026-08-17",
+    "days_since_last_commit": 14,
+    "commits_last_year": 52,
+    "releases": 52,
+    "last_release": "v1.2.3 (2026-08-16)",
+    "days_since_last_release": 15,
+    "artifacts": [
+      {
+        "name": "06_history",
+        "path": "/Users/agen/Micro1/depscope/artifacts/python-dotenv/06_history.log"
+      }
+    ]
+  },
+  "python-slugify": {
+    "repo": "python-slugify",
+    "total_commits": 289,
+    "contributors": 41,
+    "bus_factor": 1,
+    "top_author_share": 0.588,
+    "last_commit_date": "2026-01-07",
+    "days_since_last_commit": 235,
+    "commits_last_year": 16,
+    "releases": 48,
+    "last_release": "v8.0.4 (2024-02-08)",
+    "days_since_last_release": 935,
+    "artifacts": [
+      {
+        "name": "06_history",
+        "path": "/Users/agen/Micro1/depscope/artifacts/python-slugify/06_history.log"
+      }
+    ]
+  },
+  "retrying": {
+    "repo": "retrying",
+    "total_commits": 95,
+    "contributors": 15,
+    "bus_factor": 1,
+    "top_author_share": 0.8,
+    "last_commit_date": "2016-06-06",
+    "days_since_last_commit": 3737,
+    "commits_last_year": 0,
+    "releases": 10,
+    "last_release": "v1.3.3 (2014-12-14)",
+    "days_since_last_release": 4278,
+    "artifacts": [
+      {
+        "name": "06_history",
+        "path": "/Users/agen/Micro1/depscope/artifacts/retrying/06_history.log"
+      }
+    ]
+  },
+  "tabulate": {
+    "repo": "tabulate",
+    "total_commits": 865,
+    "contributors": 111,
+    "bus_factor": 1,
+    "top_author_share": 0.646,
+    "last_commit_date": "2026-03-11",
+    "days_since_last_commit": 173,
+    "commits_last_year": 118,
+    "releases": 26,
+    "last_release": "v0.10.0 (2026-03-04)",
+    "days_since_last_release": 180,
+    "artifacts": [
+      {
+        "name": "06_history",
+        "path": "/Users/agen/Micro1/depscope/artifacts/tabulate/06_history.log"
+      }
+    ]
+  }
+}

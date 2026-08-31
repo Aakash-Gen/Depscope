@@ -1,0 +1,44 @@
+{
+  "repo": "swiftslug",
+  "commit": "dd5ab7a62325",
+  "installed": true,
+  "tests_ran": true,
+  "tests_passed": 80,
+  "tests_failed": 1,
+  "tests_errored": 0,
+  "coverage_pct": 88.0,
+  "assertion_density": 1.56,
+  "notes": [],
+  "artifacts": [
+    {
+      "name": "01_venv",
+      "path": "/Users/agen/Micro1/depscope/artifacts/swiftslug/01_venv.log",
+      "exit_code": 0,
+      "duration_s": 1.349794864654541
+    },
+    {
+      "name": "02_install",
+      "path": "/Users/agen/Micro1/depscope/artifacts/swiftslug/02_install.log",
+      "exit_code": 0,
+      "duration_s": 0.6023170948028564
+    },
+    {
+      "name": "03_testdeps",
+      "path": "/Users/agen/Micro1/depscope/artifacts/swiftslug/03_testdeps.log",
+      "exit_code": 0,
+      "duration_s": 2.3038878440856934
+    },
+    {
+      "name": "04_tests",
+      "path": "/Users/agen/Micro1/depscope/artifacts/swiftslug/04_tests.log",
+      "exit_code": 1,
+      "duration_s": 0.4311990737915039
+    },
+    {
+      "name": "05_coverage",
+      "path": "/Users/agen/Micro1/depscope/artifacts/swiftslug/05_coverage.log",
+      "exit_code": 0,
+      "duration_s": 0.07144284248352051
+    }
+  ]
+}

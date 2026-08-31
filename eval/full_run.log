@@ -1,0 +1,52 @@
+[baseline] humanize        -> ADOPT
+[baseline] python-dotenv   -> ADOPT
+[baseline] bleach          -> ADOPT
+[baseline] tabulate        -> ADOPT
+[baseline] python-slugify  -> ADOPT
+[baseline] furl            -> ADOPT
+[baseline] retrying        -> CAUTION
+[baseline] swiftslug       -> CAUTION
+[baseline] tidyurl         -> AVOID
+[baseline] fasttable       -> AVOID
+[depscope] humanize        -> ADOPT (25.3s)
+[depscope] python-dotenv   -> ADOPT (21.1s)
+[depscope] bleach          -> CAUTION (26.0s)
+[depscope] tabulate        -> CAUTION (23.1s)
+[depscope] python-slugify  -> CAUTION (12.7s)
+[depscope] furl            -> CAUTION (19.2s)
+[depscope] retrying        -> AVOID (11.9s)
+[depscope] swiftslug       -> AVOID (12.8s)
+[depscope] tidyurl         -> AVOID (12.2s)
+[depscope] fasttable       -> AVOID (24.4s)
+
+# DepScope evaluation: reading-only baseline vs execution-grounded agent
+
+Same 10 packages, same rubric, same model (claude-sonnet-5).
+The only difference: DepScope runs the code.
+
+| package | ground truth | baseline (reads) | DepScope (executes) |
+|---|---|---|---|
+| `humanize` | **ADOPT** | ADOPT OK | ADOPT OK |
+| `python-dotenv` | **ADOPT** | ADOPT OK | ADOPT OK |
+| `bleach` | **CAUTION** | ADOPT WRONG | CAUTION OK |
+| `tabulate` | **CAUTION** | ADOPT WRONG | CAUTION OK |
+| `python-slugify` | **CAUTION** | ADOPT WRONG | CAUTION OK |
+| `furl` | **CAUTION** | ADOPT WRONG | CAUTION OK |
+| `retrying` | **AVOID** | CAUTION WRONG | AVOID OK |
+| `swiftslug` *(trap)* | **AVOID** | CAUTION WRONG | AVOID OK |
+| `tidyurl` *(trap)* | **AVOID** | AVOID OK | AVOID OK |
+| `fasttable` *(trap)* | **AVOID** | AVOID OK | AVOID OK |
+
+## Metrics
+
+| metric | reading-only baseline | DepScope | change |
+|---|---|---|---|
+| **Verdict accuracy (primary)** | 4/10 (40%) | 10/10 (100%) | +60 pts |
+| **Trap packages caught** | 2/3 | 3/3 | +1 |
+| Evidence-backed claims | 0 of 0 (no artifacts produced) | 60 of 60 (100% cited) | +60 verifiable |
+| README-vs-reality contradictions found | 0 | 5 | +5 |
+| Unverifiable marketing claims rejected | 0 (repeated as fact) | 27 | +27 |
+| Wall-clock per package | 7s | 19s | +11s |
+
+Human time for the same diligence by hand (clone, install, run tests, measure
+coverage, read git history) is 30-60 min per package; DepScope does it unattended.

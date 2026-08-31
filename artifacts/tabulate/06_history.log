@@ -1,0 +1,21 @@
+$ git log/tag analysis for tabulate
+----------------------------------------------------------------------
+total_commits=865
+contributors=111
+bus_factor=1 (devs owning >=50% of commits)
+top_author_share=0.646
+last_commit=2026-03-11 (173 days ago)
+commits_last_year=118
+releases=26
+last_release=v0.10.0 (2026-03-04)
+days_since_last_release=180
+
+top authors:
+  Sergey Astanin: 559
+  Dimitri Papadopoulos: 46
+  Hugo van Kemenade: 16
+  eliegoudout: 11
+  George Schizas: 9
+  Benjamin Maier: 8
+  magelisk: 7
+  jerome provensal: 6

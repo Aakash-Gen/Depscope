@@ -1,0 +1,72 @@
+{
+  "package": "tidyurl",
+  "commit": "7a6ea2d843db",
+  "verdict": "AVOID",
+  "overall": 6.0,
+  "findings": [
+    {
+      "dimension": "Clean install",
+      "score": 10,
+      "statement": "Installs successfully from source in a fresh virtualenv.",
+      "citation": "artifacts/tidyurl/02_install.log",
+      "severity": "info"
+    },
+    {
+      "dimension": "Tests pass",
+      "score": 10,
+      "statement": "All 8 tests pass in a clean environment.",
+      "citation": "artifacts/tidyurl/04_tests.log",
+      "severity": "info"
+    },
+    {
+      "dimension": "Coverage",
+      "score": 6,
+      "statement": "Measured coverage 67% (moderate).",
+      "citation": "artifacts/tidyurl/05_coverage.log",
+      "severity": "warn"
+    },
+    {
+      "dimension": "Test strength",
+      "score": 1,
+      "statement": "Coverage theater: only 0.12 assertions per test function - the suite executes code but verifies almost nothing.",
+      "citation": "artifacts/tidyurl/04_tests.log",
+      "severity": "critical"
+    },
+    {
+      "dimension": "Maintenance",
+      "score": 6,
+      "statement": "Slow: last commit 190 days ago; 3 commits in the last year.",
+      "citation": "artifacts/tidyurl/06_history.log",
+      "severity": "warn"
+    },
+    {
+      "dimension": "Bus factor",
+      "score": 3,
+      "statement": "Bus factor 1 - a single contributor authored 56% of all commits.",
+      "citation": "artifacts/tidyurl/06_history.log",
+      "severity": "warn"
+    }
+  ],
+  "mismatches": [
+    {
+      "claim": "94% test-covered",
+      "claimed": "94% coverage",
+      "measured": "67% coverage",
+      "citation": "artifacts/tidyurl/05_coverage.log"
+    }
+  ],
+  "rejected_claims": [
+    {
+      "claim": "used in production by teams that care about correctness",
+      "reason": "no artifact can verify this claim"
+    },
+    {
+      "claim": "battle-tested across Python 3.8-3.12",
+      "reason": "no artifact can verify this claim"
+    },
+    {
+      "claim": "The public API has been stable since 1.0",
+      "reason": "no artifact can verify this claim"
+    }
+  ]
+}

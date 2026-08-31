@@ -1,0 +1,20 @@
+[baseline] humanize        -> ADOPT
+[baseline] python-dotenv   -> ADOPT
+[baseline] bleach          -> ADOPT
+[baseline] tabulate        -> ADOPT
+[baseline] python-slugify  -> ADOPT
+[baseline] furl            -> CAUTION
+[baseline] retrying        -> CAUTION
+[baseline] swiftslug       -> CAUTION
+[baseline] tidyurl         -> AVOID
+[baseline] fasttable       -> AVOID
+Traceback (most recent call last):
+  File "/Users/agen/Micro1/depscope/eval/run_eval.py", line 128, in <module>
+    (ROOT / "eval" / "results_depscope.json").read_text())
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1256, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1242, in open
+    return io.open(self, mode, buffering, encoding, errors, newline,
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1110, in _opener
+    return self._accessor.open(self, flags, mode)
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/agen/Micro1/depscope/eval/results_depscope.json'

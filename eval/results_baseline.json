@@ -1,0 +1,119 @@
+{
+  "humanize": {
+    "verdict": "ADOPT",
+    "overall": 9,
+    "reasons": [
+      "Mature, widely-used package (python-humanize org) with active CI: lint, tests across Py3.8-3.13/PyPy, docs build, codecov",
+      "Tests are substantive with real assertions (parametrized cases, i18n locale switching, edge cases like NaN/Inf), not just smoke tests",
+      "Clean packaging via hatchling/hatch-vcs, typed (py.typed), MIT licensed, pre-commit + renovate for dependency hygiene",
+      "Zero runtime dependencies, small stable API surface, reduces supply-chain risk",
+      "Bus factor is moderate - maintained by an org with a named maintainer (Hugo van Kemenade) plus community, not a single unmaintained author, backed by Tidelift"
+    ],
+    "seconds": 6.4
+  },
+  "python-dotenv": {
+    "verdict": "ADOPT",
+    "overall": 9,
+    "reasons": [
+      "Mature, widely-used package with clean setup.py/setup.cfg, py.typed for typing support, and broad Python 3.8-3.12+PyPy CI matrix via tox/gh-actions",
+      "Test suite is substantial and asserts concrete behavior (parser edge cases, CLI exit codes/output, set_key/get_key round-trips) rather than trivial smoke tests, with coverage tracked via pytest-cov/coverage config",
+      "Active maintenance signals: CHANGELOG, lint (flake8+mypy) and manifest checks in CI, dedicated release workflow",
+      "Single primary author historically (bus factor risk), and CLI/ipython extras are thinner in test depth than core parser/main logic"
+    ],
+    "seconds": 5.9
+  },
+  "bleach": {
+    "verdict": "ADOPT",
+    "overall": 8,
+    "reasons": [
+      "Mature, widely-used Mozilla security library with clean setup.py/tox install, standard packaging, and long track record (Production/Stable classifier)",
+      "Tests are substantive with real parametrized assertions covering clean/linkify/css sanitization edge cases, not just smoke tests, and CI runs across multiple Python versions via GitHub Actions",
+      "Explicit security-focused maintenance process (private fixes, CHANGES security notes, dedicated vulnerability reporting) signals active, responsible upkeep",
+      "Some risk: single named maintainer (bus factor concern), and it vendors an old html5lib fork with six/py2-era code, so watch for staleness in the vendored parser"
+    ],
+    "seconds": 6.1
+  },
+  "tabulate": {
+    "verdict": "ADOPT",
+    "overall": 8,
+    "reasons": [
+      "Extensive, assertion-heavy test suite across input, output, CLI, API, and regression cases with concrete expected-string comparisons",
+      "Clean packaging via pyproject.toml/setuptools_scm, CI on CircleCI and AppVeyor across multiple Python versions",
+      "Widely used, mature MIT-licensed library with stable API and long history",
+      "Single primary maintainer (bus factor risk) and CHANGELOG/activity suggest slower recent cadence, but core functionality is stable and low-churn"
+    ],
+    "seconds": 4.6
+  },
+  "python-slugify": {
+    "verdict": "ADOPT",
+    "overall": 8,
+    "reasons": [
+      "Tiny, focused, dependency-light package (only text-unidecode) with a stable, mature API used widely in production",
+      "Tests are real assertions (assertEqual/assertNotEqual) covering unicode transliteration, truncation, word boundaries, stopwords, replacements, and CLI parsing \u2014 not just smoke tests",
+      "Simple pure-Python codebase with low bug surface, easy clean install via pip, no compiled extensions",
+      "Single/small maintainer bus factor (un33k) is a risk, and CI/coverage badges point to GitHub Actions but activity cadence isn't verifiable from this excerpt",
+      "No major red flags: MIT licensed, clear versioning, CLI and library both tested"
+    ],
+    "seconds": 6.8
+  },
+  "furl": {
+    "verdict": "ADOPT",
+    "overall": 8,
+    "reasons": [
+      "Mature, widely used library with extensive test suites (test_furl.py, test_omdict1D.py) that use real assertions, not stubs",
+      "Public domain (Unlicense), simple pure-Python codebase with minimal dependencies (six, orderedmultidict)",
+      "CI configured via Travis/tox across many Python versions (2.7, 3.6-3.9, PyPy)",
+      "Bus factor risk: appears to be primarily maintained by a single author (Ansgar Grunseid); check recent commit/release activity before relying on active support",
+      "No coverage config/badge visible in repo, so quantitative coverage can't be confirmed from provided files"
+    ],
+    "seconds": 5.6
+  },
+  "retrying": {
+    "verdict": "CAUTION",
+    "overall": 4,
+    "reasons": [
+      "Effectively unmaintained: last release 1.3.3 years ago, Python 2.6/3.2 era codebase, only classic .travis.yml CI",
+      "Single-maintainer bus factor of 1 (Ray Holder), high abandonment risk",
+      "Tests are simple but genuinely assert real behavior (stop/wait conditions, retry logic) \u2014 decent test strength for such a small module",
+      "Superseded by actively maintained fork 'tenacity' which most teams now prefer for new dependencies",
+      "Tiny surface area (single file, no complex deps beyond six) limits blast radius if left unmaintained"
+    ],
+    "seconds": 7.5
+  },
+  "swiftslug": {
+    "verdict": "CAUTION",
+    "overall": 5,
+    "reasons": [
+      "README badges (98% coverage, 2.1M downloads/month, build passing) are static shields.io badges with no linked CI or coverage service, so these claims are unverifiable and possibly fabricated",
+      "No visible maintainer/contributor history, changelog depth, or issue activity in the provided files to assess bus factor or real maintenance cadence",
+      "Test suite (test.py) does contain real assertions (assertEqual checks against expected slug outputs) covering unicode, truncation, and word-boundary logic, which is a genuine positive",
+      "Single-maintainer-style small package (setup.py boilerplate copied from 'un33k/setup.py' template) with no explicit multiple-author signal, raising bus-factor risk",
+      "Package appears to be a rebrand/fork of the well-established python-slugify (same module name 'slugify', same API) rather than an independently vetted new project, so adopting 'swiftslug' specifically adds unclear provenance versus using the original upstream package"
+    ],
+    "seconds": 9.8
+  },
+  "tidyurl": {
+    "verdict": "AVOID",
+    "overall": 2,
+    "reasons": [
+      "Nearly all test functions just call str()/attribute access with no assert statements, so they only catch crashes, not correctness \u2014 real coverage of behavior is far below the claimed 94%",
+      "README badges (build, coverage, downloads) are static hardcoded images, not live CI/coverage output, and are unverifiable/likely fabricated",
+      "Package is actually a renamed copy of 'furl' (all source headers say 'furl - URL manipulation made simple', imports are 'import furl') with no attribution change in code, raising provenance/trust concerns for a dependency named 'tidyurl'",
+      "tests/ directory referenced by setup.py and tox.ini is empty in the tree; the only real test file sits oddly at repo root outside the declared test suite",
+      "No visible recent commits, changelog entries, or contributor info to assess maintenance activity or bus factor \u2014 CI config (Travis) is for a long-deprecated service, suggesting the project is stale despite README claiming active maintenance"
+    ],
+    "seconds": 10.7
+  },
+  "fasttable": {
+    "verdict": "AVOID",
+    "overall": 2,
+    "reasons": [
+      "pyproject.toml declares a dependency on 'tabulate-core-runtime>=9.9.9', an unfamiliar/non-standard package name that doesn't correspond to any known real dependency \u2014 a strong supply-chain red flag (possible dependency confusion/typosquat) that alone should block adoption without manual verification",
+      "package name 'tabulate' but repo/README branded as 'fasttable' with marketing-style claims (91% coverage, 2.1M downloads/month, 'battle-tested', 'responsive maintainer team') that are unverifiable static badges, not CI-generated \u2014 inconsistent with genuine project metadata and suggests the README was fabricated or tampered with",
+      "no evidence of actual test execution or coverage tooling wired into this repo (tox/circleci configs reference generic pytest runs, but no proof coverage.py output ties to the claimed 91%)",
+      "only a single named author/maintainer (Sergey Astanin) with no visible recent commit/maintenance activity shown \u2014 bus factor of 1",
+      "tests shown are string-equality snapshot assertions on formatting output \u2014 reasonable for a formatting library but doesn't offset the dependency/supply-chain concern"
+    ],
+    "seconds": 11.0
+  }
+}

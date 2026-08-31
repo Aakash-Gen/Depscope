@@ -1,0 +1,57 @@
+{
+  "package": "retrying",
+  "commit": "3659c70b1f0d",
+  "verdict": "AVOID",
+  "overall": 7.2,
+  "findings": [
+    {
+      "dimension": "Clean install",
+      "score": 10,
+      "statement": "Installs successfully from source in a fresh virtualenv.",
+      "citation": "artifacts/retrying/02_install.log",
+      "severity": "info"
+    },
+    {
+      "dimension": "Tests pass",
+      "score": 10,
+      "statement": "All 21 tests pass in a clean environment.",
+      "citation": "artifacts/retrying/04_tests.log",
+      "severity": "info"
+    },
+    {
+      "dimension": "Coverage",
+      "score": 10,
+      "statement": "Measured coverage 92%.",
+      "citation": "artifacts/retrying/05_coverage.log",
+      "severity": "info"
+    },
+    {
+      "dimension": "Test strength",
+      "score": 10,
+      "statement": "Tests assert meaningfully (4.14 assertions per test function).",
+      "citation": "artifacts/retrying/04_tests.log",
+      "severity": "info"
+    },
+    {
+      "dimension": "Maintenance",
+      "score": 0,
+      "statement": "Abandoned: no commit in 3737 days (last 2016-06-06).",
+      "citation": "artifacts/retrying/06_history.log",
+      "severity": "critical"
+    },
+    {
+      "dimension": "Bus factor",
+      "score": 3,
+      "statement": "Bus factor 1 - a single contributor authored 80% of all commits.",
+      "citation": "artifacts/retrying/06_history.log",
+      "severity": "warn"
+    }
+  ],
+  "mismatches": [],
+  "rejected_claims": [
+    {
+      "claim": "general-purpose retrying library ... to simplify the task of adding retry behavior to just about anything",
+      "reason": "no artifact can verify this claim"
+    }
+  ]
+}

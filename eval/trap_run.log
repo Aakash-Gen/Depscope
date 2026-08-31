@@ -1,0 +1,3 @@
+fasttable    install=False tests=247p/0f/0e cov=85.0 assert_density=1.06
+swiftslug    install=True  tests=80p/1f/0e cov=88.0 assert_density=1.56
+tidyurl      install=True  tests=8p/0f/0e cov=67.0 assert_density=0.12

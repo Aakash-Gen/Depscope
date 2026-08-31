@@ -1,0 +1,16 @@
+$ /Users/agen/Micro1/depscope/repos/furl/.depscope_venv/bin/python -m coverage report
+(cwd=/Users/agen/Micro1/depscope/repos/furl)
+----------------------------------------------------------------------
+Name                  Stmts   Miss  Cover
+-----------------------------------------
+furl/__init__.py          2      0   100%
+furl/__version__.py       8      0   100%
+furl/common.py            6      0   100%
+furl/compat.py           13      4    69%
+furl/furl.py            775     29    96%
+furl/omdict1D.py         37      0   100%
+-----------------------------------------
+TOTAL                   841     33    96%
+
+----------------------------------------------------------------------
+exit=0 duration=0.1s

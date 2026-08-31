@@ -1,0 +1,52 @@
+$ /Users/agen/Micro1/depscope/repos/bleach/.depscope_venv/bin/python -m coverage report
+(cwd=/Users/agen/Micro1/depscope/repos/bleach)
+----------------------------------------------------------------------
+Name                                                        Stmts   Miss  Cover
+-------------------------------------------------------------------------------
+bleach/__init__.py                                             11      0   100%
+bleach/_vendor/__init__.py                                      0      0   100%
+bleach/_vendor/html5lib/__init__.py                             7      0   100%
+bleach/_vendor/html5lib/_ihatexml.py                          148    111    25%
+bleach/_vendor/html5lib/_inputstream.py                       553    377    32%
+bleach/_vendor/html5lib/_tokenizer.py                        1243    846    32%
+bleach/_vendor/html5lib/_trie/__init__.py                       3      0   100%
+bleach/_vendor/html5lib/_trie/_base.py                         26     13    50%
+bleach/_vendor/html5lib/_trie/py.py                            46     20    57%
+bleach/_vendor/html5lib/_utils.py                              88     19    78%
+bleach/_vendor/html5lib/constants.py                           39      0   100%
+bleach/_vendor/html5lib/filters/__init__.py                     0      0   100%
+bleach/_vendor/html5lib/filters/alphabeticalattributes.py      14     14     0%
+bleach/_vendor/html5lib/filters/base.py                         8      1    88%
+bleach/_vendor/html5lib/filters/inject_meta_charset.py         48     48     0%
+bleach/_vendor/html5lib/filters/lint.py                        65     65     0%
+bleach/_vendor/html5lib/filters/optionaltags.py                95     95     0%
+bleach/_vendor/html5lib/filters/sanitizer.py                  121     81    33%
+bleach/_vendor/html5lib/filters/whitespace.py                  23     23     0%
+bleach/_vendor/html5lib/html5parser.py                       1533    811    47%
+bleach/_vendor/html5lib/serializer.py                         205     78    62%
+bleach/_vendor/html5lib/treeadapters/__init__.py                8      8     0%
+bleach/_vendor/html5lib/treeadapters/genshi.py                 32     32     0%
+bleach/_vendor/html5lib/treeadapters/sax.py                    30     30     0%
+bleach/_vendor/html5lib/treebuilders/__init__.py               22      9    59%
+bleach/_vendor/html5lib/treebuilders/base.py                  201     79    61%
+bleach/_vendor/html5lib/treebuilders/dom.py                   170    170     0%
+bleach/_vendor/html5lib/treebuilders/etree.py                 247    129    48%
+bleach/_vendor/html5lib/treebuilders/etree_lxml.py            268    268     0%
+bleach/_vendor/html5lib/treewalkers/__init__.py                78     60    23%
+bleach/_vendor/html5lib/treewalkers/base.py                   102     13    87%
+bleach/_vendor/html5lib/treewalkers/dom.py                     28     28     0%
+bleach/_vendor/html5lib/treewalkers/etree.py                   79      5    94%
+bleach/_vendor/html5lib/treewalkers/etree_lxml.py             148    148     0%
+bleach/_vendor/html5lib/treewalkers/genshi.py                  47     47     0%
+bleach/_vendor/parse.py                                       566    351    38%
+bleach/callbacks.py                                            20      0   100%
+bleach/css_sanitizer.py                                        22     22     0%
+bleach/html5lib_shim.py                                       235      6    97%
+bleach/linkifier.py                                           194      2    99%
+bleach/parse_shim.py                                            1      0   100%
+bleach/sanitizer.py                                           201     27    87%
+-------------------------------------------------------------------------------
+TOTAL                                                        6975   4036    42%
+
+----------------------------------------------------------------------
+exit=0 duration=0.4s

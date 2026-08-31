@@ -1,0 +1,7 @@
+run 1: 6/10 correct
+run 2: 6/10 correct
+run 3: 7/10 correct
+
+baseline accuracy over 3 runs: [6, 6, 7] (mean 6.33/10, range 6-7)
+packages whose verdict CHANGED between identical runs:
+  swiftslug: AVOID / CAUTION

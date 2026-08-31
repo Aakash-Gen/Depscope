@@ -1,0 +1,13 @@
+$ /Users/agen/Micro1/depscope/repos/retrying/.depscope_venv/bin/python -m coverage report
+(cwd=/Users/agen/Micro1/depscope/repos/retrying)
+----------------------------------------------------------------------
+Name               Stmts   Miss  Cover
+--------------------------------------
+retrying.py          137      5    96%
+setup.py              19     19     0%
+test_retrying.py     285     13    95%
+--------------------------------------
+TOTAL                441     37    92%
+
+----------------------------------------------------------------------
+exit=0 duration=0.1s

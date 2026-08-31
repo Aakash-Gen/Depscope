@@ -1,0 +1,26 @@
+[
+  {
+    "package": "swiftslug",
+    "source": "python-slugify @ v6.1.2",
+    "defect": "seeded regression in slugify.py (quote handling) -> real test failures",
+    "readme_claim": "98% coverage, green on every commit",
+    "detectable_by_reading": false,
+    "truth": "AVOID"
+  },
+  {
+    "package": "tidyurl",
+    "source": "furl @ v2.1.2",
+    "defect": "coverage theater: tests execute code but assert ~nothing",
+    "readme_claim": "94% coverage, comprehensive test suite",
+    "detectable_by_reading": false,
+    "truth": "CAUTION"
+  },
+  {
+    "package": "fasttable",
+    "source": "tabulate @ v0.9.0",
+    "defect": "unresolvable pinned dependency -> clean-env install fails",
+    "readme_claim": "install with one command, works everywhere",
+    "detectable_by_reading": false,
+    "truth": "AVOID"
+  }
+]

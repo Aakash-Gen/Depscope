@@ -1,0 +1,46 @@
+{
+  "repo": "fasttable",
+  "commit": "e837c947a63a",
+  "installed": false,
+  "tests_ran": true,
+  "tests_passed": 247,
+  "tests_failed": 0,
+  "tests_errored": 0,
+  "coverage_pct": 85.0,
+  "assertion_density": 1.06,
+  "notes": [
+    "package failed to install from source in a clean env"
+  ],
+  "artifacts": [
+    {
+      "name": "01_venv",
+      "path": "/Users/agen/Micro1/depscope/artifacts/fasttable/01_venv.log",
+      "exit_code": 0,
+      "duration_s": 1.3035979270935059
+    },
+    {
+      "name": "02_install",
+      "path": "/Users/agen/Micro1/depscope/artifacts/fasttable/02_install.log",
+      "exit_code": 1,
+      "duration_s": 2.8831779956817627
+    },
+    {
+      "name": "03_testdeps",
+      "path": "/Users/agen/Micro1/depscope/artifacts/fasttable/03_testdeps.log",
+      "exit_code": 0,
+      "duration_s": 2.4231371879577637
+    },
+    {
+      "name": "04_tests",
+      "path": "/Users/agen/Micro1/depscope/artifacts/fasttable/04_tests.log",
+      "exit_code": 0,
+      "duration_s": 0.9094841480255127
+    },
+    {
+      "name": "05_coverage",
+      "path": "/Users/agen/Micro1/depscope/artifacts/fasttable/05_coverage.log",
+      "exit_code": 0,
+      "duration_s": 0.10570311546325684
+    }
+  ]
+}

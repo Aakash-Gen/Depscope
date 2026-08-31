@@ -1,0 +1,73 @@
+{
+  "package": "bleach",
+  "commit": "6cd4d527a6b4",
+  "verdict": "CAUTION",
+  "overall": 8.3,
+  "findings": [
+    {
+      "dimension": "Clean install",
+      "score": 10,
+      "statement": "Installs successfully from source in a fresh virtualenv.",
+      "citation": "artifacts/bleach/02_install.log",
+      "severity": "info"
+    },
+    {
+      "dimension": "Tests pass",
+      "score": 10,
+      "statement": "All 414 tests pass in a clean environment.",
+      "citation": "artifacts/bleach/04_tests.log",
+      "severity": "info"
+    },
+    {
+      "dimension": "Coverage",
+      "score": 3,
+      "statement": "Measured coverage only 42%.",
+      "citation": "artifacts/bleach/05_coverage.log",
+      "severity": "warn"
+    },
+    {
+      "dimension": "Test strength",
+      "score": 10,
+      "statement": "Tests assert meaningfully (1.41 assertions per test function).",
+      "citation": "artifacts/bleach/04_tests.log",
+      "severity": "info"
+    },
+    {
+      "dimension": "Maintenance",
+      "score": 10,
+      "statement": "Actively maintained: last commit 87 days ago, 31 commits in the last year.",
+      "citation": "artifacts/bleach/06_history.log",
+      "severity": "info"
+    },
+    {
+      "dimension": "Bus factor",
+      "score": 7,
+      "statement": "Bus factor 2 across 81 contributors.",
+      "citation": "artifacts/bleach/06_history.log",
+      "severity": "info"
+    }
+  ],
+  "mismatches": [],
+  "rejected_claims": [
+    {
+      "claim": "Bleach is as good as modern browsers at dealing with weird, quirky HTML fragments",
+      "reason": "no artifact can verify this claim"
+    },
+    {
+      "claim": "any of Bleach's methods will fix unbalanced or mis-nested tags",
+      "reason": "no artifact can verify this claim"
+    },
+    {
+      "claim": "The version on GitHub is the most up-to-date and contains the latest bug fixes",
+      "reason": "no artifact can verify this claim"
+    },
+    {
+      "claim": "bleach.clean('an <script>evil()</script> example') returns escaped output as shown",
+      "reason": "no artifact can verify this claim"
+    },
+    {
+      "claim": "bleach.linkify('an http://example.com url') returns linkified output as shown",
+      "reason": "no artifact can verify this claim"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+$ /Users/agen/Micro1/depscope/trap_repos/swiftslug/.depscope_venv/bin/python -m coverage run --source slugify -m pytest -q --no-header -p no:cacheprovider test.py
+(cwd=/Users/agen/Micro1/depscope/trap_repos/swiftslug)
+----------------------------------------------------------------------
+....F................................................................... [ 88%]
+.........                                                                [100%]
+=================================== FAILURES ===================================
+________________________ TestSlugify.test_cyrillic_text ________________________
+
+self = <test.TestSlugify testMethod=test_cyrillic_text>
+
+    def test_cyrillic_text(self):
+        txt = 'Компьютер'
+        r = slugify(txt)
+>       self.assertEqual(r, "kompiuter")
+E       AssertionError: 'komp-iuter' != 'kompiuter'
+E       - komp-iuter
+E       ?     -
+E       + kompiuter
+
+test.py:55: AssertionError
+=========================== short test summary info ============================
+FAILED test.py::TestSlugify::test_cyrillic_text - AssertionError: 'komp-iuter...
+1 failed, 80 passed in 0.06s
+
+----------------------------------------------------------------------
+exit=1 duration=0.4s

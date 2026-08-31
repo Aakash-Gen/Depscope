@@ -1,0 +1,57 @@
+{
+  "package": "python-slugify",
+  "commit": "3f1a0fe7c577",
+  "verdict": "CAUTION",
+  "overall": 8.2,
+  "findings": [
+    {
+      "dimension": "Clean install",
+      "score": 10,
+      "statement": "Installs successfully from source in a fresh virtualenv.",
+      "citation": "artifacts/python-slugify/02_install.log",
+      "severity": "info"
+    },
+    {
+      "dimension": "Tests pass",
+      "score": 10,
+      "statement": "All 81 tests pass in a clean environment.",
+      "citation": "artifacts/python-slugify/04_tests.log",
+      "severity": "info"
+    },
+    {
+      "dimension": "Coverage",
+      "score": 10,
+      "statement": "Measured coverage 88%.",
+      "citation": "artifacts/python-slugify/05_coverage.log",
+      "severity": "info"
+    },
+    {
+      "dimension": "Test strength",
+      "score": 10,
+      "statement": "Tests assert meaningfully (1.56 assertions per test function).",
+      "citation": "artifacts/python-slugify/04_tests.log",
+      "severity": "info"
+    },
+    {
+      "dimension": "Maintenance",
+      "score": 6,
+      "statement": "Slow: last commit 235 days ago; 16 commits in the last year.",
+      "citation": "artifacts/python-slugify/06_history.log",
+      "severity": "warn"
+    },
+    {
+      "dimension": "Bus factor",
+      "score": 3,
+      "statement": "Bus factor 1 - a single contributor authored 59% of all commits.",
+      "citation": "artifacts/python-slugify/06_history.log",
+      "severity": "warn"
+    }
+  ],
+  "mismatches": [],
+  "rejected_claims": [
+    {
+      "claim": "Best attempt to create slugs from unicode strings while keeping it DRY",
+      "reason": "no artifact can verify this claim"
+    }
+  ]
+}

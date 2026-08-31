@@ -1,0 +1,21 @@
+$ git log/tag analysis for retrying
+----------------------------------------------------------------------
+total_commits=95
+contributors=15
+bus_factor=1 (devs owning >=50% of commits)
+top_author_share=0.8
+last_commit=2016-06-06 (3737 days ago)
+commits_last_year=0
+releases=10
+last_release=v1.3.3 (2014-12-14)
+days_since_last_release=4278
+
+top authors:
+  Ray Holder: 76
+  Joshua Harlow: 4
+  Simon Dollé: 3
+  Ryan Peck: 1
+  Cyrus Durgin: 1
+  cyrus durgin: 1
+  Julien Danjou: 1
+  Jonathan Herriott: 1

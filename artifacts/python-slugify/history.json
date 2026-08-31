@@ -1,0 +1,19 @@
+{
+  "repo": "python-slugify",
+  "total_commits": 289,
+  "contributors": 41,
+  "bus_factor": 1,
+  "top_author_share": 0.588,
+  "last_commit_date": "2026-01-07",
+  "days_since_last_commit": 235,
+  "commits_last_year": 16,
+  "releases": 48,
+  "last_release": "v8.0.4 (2024-02-08)",
+  "days_since_last_release": 935,
+  "artifacts": [
+    {
+      "name": "06_history",
+      "path": "/Users/agen/Micro1/depscope/artifacts/python-slugify/06_history.log"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "runs": 3,
+  "scores": [
+    6,
+    6,
+    7
+  ],
+  "mean": 6.33,
+  "min": 6,
+  "max": 7,
+  "stdev": 0.58,
+  "unstable_packages": {
+    "swiftslug": [
+      "AVOID",
+      "CAUTION"
+    ]
+  },
+  "per_run": [
+    {
+      "run": 1,
+      "correct": 6,
+      "verdicts": {
+        "humanize": "ADOPT",
+        "python-dotenv": "ADOPT",
+        "bleach": "ADOPT",
+        "tabulate": "ADOPT",
+        "python-slugify": "ADOPT",
+        "furl": "CAUTION",
+        "retrying": "AVOID",
+        "swiftslug": "CAUTION",
+        "tidyurl": "AVOID",
+        "fasttable": "AVOID"
+      }
+    },
+    {
+      "run": 2,
+      "correct": 6,
+      "verdicts": {
+        "humanize": "ADOPT",
+        "python-dotenv": "ADOPT",
+        "bleach": "ADOPT",
+        "tabulate": "ADOPT",
+        "python-slugify": "ADOPT",
+        "furl": "CAUTION",
+        "retrying": "AVOID",
+        "swiftslug": "CAUTION",
+        "tidyurl": "AVOID",
+        "fasttable": "AVOID"
+      }
+    },
+    {
+      "run": 3,
+      "correct": 7,
+      "verdicts": {
+        "humanize": "ADOPT",
+        "python-dotenv": "ADOPT",
+        "bleach": "ADOPT",
+        "tabulate": "ADOPT",
+        "python-slugify": "ADOPT",
+        "furl": "CAUTION",
+        "retrying": "AVOID",
+        "swiftslug": "AVOID",
+        "tidyurl": "AVOID",
+        "fasttable": "AVOID"
+      }
+    }
+  ]
+}

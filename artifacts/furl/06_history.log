@@ -1,0 +1,21 @@
+$ git log/tag analysis for furl
+----------------------------------------------------------------------
+total_commits=566
+contributors=18
+bus_factor=1 (devs owning >=50% of commits)
+top_author_share=0.562
+last_commit=2026-02-21 (190 days ago)
+commits_last_year=3
+releases=19
+last_release=v2.1.4 (2025-03-08)
+days_since_last_release=541
+
+top authors:
+  Arthur Grunseid: 318
+  Ansgar Grunseid: 172
+  Arthur Grunseid (MBAir): 20
+  Pedro Rodrigues: 16
+  gruns: 9
+  Marc Abramowitz: 7
+  Kalle Jepsen: 4
+  Ben Greiner: 3

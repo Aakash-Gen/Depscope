@@ -1,0 +1,94 @@
+{
+  "package": "fasttable",
+  "commit": "e837c947a63a",
+  "verdict": "AVOID",
+  "overall": 7.2,
+  "findings": [
+    {
+      "dimension": "Clean install",
+      "score": 0,
+      "statement": "FAILS to install in a fresh virtualenv (dependency cannot be resolved).",
+      "citation": "artifacts/fasttable/02_install.log",
+      "severity": "critical"
+    },
+    {
+      "dimension": "Tests pass",
+      "score": 10,
+      "statement": "All 247 tests pass in a clean environment.",
+      "citation": "artifacts/fasttable/04_tests.log",
+      "severity": "info"
+    },
+    {
+      "dimension": "Coverage",
+      "score": 10,
+      "statement": "Measured coverage 85%.",
+      "citation": "artifacts/fasttable/05_coverage.log",
+      "severity": "info"
+    },
+    {
+      "dimension": "Test strength",
+      "score": 10,
+      "statement": "Tests assert meaningfully (1.06 assertions per test function).",
+      "citation": "artifacts/fasttable/04_tests.log",
+      "severity": "info"
+    },
+    {
+      "dimension": "Maintenance",
+      "score": 10,
+      "statement": "Actively maintained: last commit 173 days ago, 118 commits in the last year.",
+      "citation": "artifacts/fasttable/06_history.log",
+      "severity": "info"
+    },
+    {
+      "dimension": "Bus factor",
+      "score": 3,
+      "statement": "Bus factor 1 - a single contributor authored 65% of all commits.",
+      "citation": "artifacts/fasttable/06_history.log",
+      "severity": "warn"
+    }
+  ],
+  "mismatches": [
+    {
+      "claim": "91% test-covered",
+      "claimed": "91% coverage",
+      "measured": "85% coverage",
+      "citation": "artifacts/fasttable/05_coverage.log"
+    },
+    {
+      "claim": "Pretty-print tabular data with zero friction",
+      "claimed": "installs with one command",
+      "measured": "install fails in a clean virtualenv",
+      "citation": "artifacts/fasttable/02_install.log"
+    }
+  ],
+  "rejected_claims": [
+    {
+      "claim": "used in production by teams that care about correctness",
+      "reason": "no artifact can verify this claim"
+    },
+    {
+      "claim": "battle-tested across Python 3.8-3.12",
+      "reason": "no artifact can verify this claim"
+    },
+    {
+      "claim": "fully type-annotated",
+      "reason": "no artifact can verify this claim"
+    },
+    {
+      "claim": "comprehensive test suite",
+      "reason": "no artifact can verify this claim"
+    },
+    {
+      "claim": "zero-overhead pure-Python implementation",
+      "reason": "no artifact can verify this claim"
+    },
+    {
+      "claim": "The public API has been stable since 1.0",
+      "reason": "no artifact can verify this claim"
+    },
+    {
+      "claim": "follows semantic versioning strictly",
+      "reason": "no artifact can verify this claim"
+    }
+  ]
+}

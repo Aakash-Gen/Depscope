@@ -1,0 +1,52 @@
+{
+  "repo": "python-dotenv",
+  "commit": "d6c0b9638349",
+  "installed": true,
+  "tests_ran": true,
+  "tests_passed": 152,
+  "tests_failed": 0,
+  "tests_errored": 0,
+  "coverage_pct": 91.0,
+  "assertion_density": 1.72,
+  "notes": [
+    "installed requirements.txt"
+  ],
+  "artifacts": [
+    {
+      "name": "01_venv",
+      "path": "/Users/agen/Micro1/depscope/artifacts/python-dotenv/01_venv.log",
+      "exit_code": 0,
+      "duration_s": 1.3227839469909668
+    },
+    {
+      "name": "02_install",
+      "path": "/Users/agen/Micro1/depscope/artifacts/python-dotenv/02_install.log",
+      "exit_code": 0,
+      "duration_s": 0.5390291213989258
+    },
+    {
+      "name": "03_testdeps",
+      "path": "/Users/agen/Micro1/depscope/artifacts/python-dotenv/03_testdeps.log",
+      "exit_code": 0,
+      "duration_s": 2.332846164703369
+    },
+    {
+      "name": "03c_requirements.txt",
+      "path": "/Users/agen/Micro1/depscope/artifacts/python-dotenv/03c_requirements.txt.log",
+      "exit_code": 0,
+      "duration_s": 7.332722902297974
+    },
+    {
+      "name": "04_tests",
+      "path": "/Users/agen/Micro1/depscope/artifacts/python-dotenv/04_tests.log",
+      "exit_code": 0,
+      "duration_s": 1.6376798152923584
+    },
+    {
+      "name": "05_coverage",
+      "path": "/Users/agen/Micro1/depscope/artifacts/python-dotenv/05_coverage.log",
+      "exit_code": 0,
+      "duration_s": 0.08851790428161621
+    }
+  ]
+}
