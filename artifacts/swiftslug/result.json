@@ -14,31 +14,31 @@
       "name": "01_venv",
       "path": "/Users/agen/Micro1/depscope/artifacts/swiftslug/01_venv.log",
       "exit_code": 0,
-      "duration_s": 1.303443193435669
+      "duration_s": 1.338120937347412
     },
     {
       "name": "02_install",
       "path": "/Users/agen/Micro1/depscope/artifacts/swiftslug/02_install.log",
       "exit_code": 0,
-      "duration_s": 0.5880007743835449
+      "duration_s": 0.6593017578125
     },
     {
       "name": "03_testdeps",
       "path": "/Users/agen/Micro1/depscope/artifacts/swiftslug/03_testdeps.log",
       "exit_code": 0,
-      "duration_s": 2.3331198692321777
+      "duration_s": 2.2829530239105225
     },
     {
       "name": "04_tests",
       "path": "/Users/agen/Micro1/depscope/artifacts/swiftslug/04_tests.log",
       "exit_code": 1,
-      "duration_s": 0.38698911666870117
+      "duration_s": 0.5612101554870605
     },
     {
       "name": "05_coverage",
       "path": "/Users/agen/Micro1/depscope/artifacts/swiftslug/05_coverage.log",
       "exit_code": 0,
-      "duration_s": 0.07090997695922852
+      "duration_s": 0.07211494445800781
     }
   ]
 }

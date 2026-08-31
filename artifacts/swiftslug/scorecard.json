@@ -47,6 +47,36 @@
       "severity": "warn"
     }
   ],
-  "mismatches": [],
-  "rejected_claims": []
+  "mismatches": [
+    {
+      "claim": "98% test-covered",
+      "claimed": "98% coverage",
+      "measured": "88% coverage",
+      "citation": "artifacts/swiftslug/05_coverage.log"
+    },
+    {
+      "claim": "green on every commit",
+      "claimed": "test suite is green",
+      "measured": "1 failing test(s)",
+      "citation": "artifacts/swiftslug/04_tests.log"
+    }
+  ],
+  "rejected_claims": [
+    {
+      "claim": "battle-tested across Python 3.8-3.12",
+      "reason": "no artifact can verify this claim"
+    },
+    {
+      "claim": "used in production by teams that care about correctness",
+      "reason": "no artifact can verify this claim"
+    },
+    {
+      "claim": "The public API has been stable since 1.0",
+      "reason": "no artifact can verify this claim"
+    },
+    {
+      "claim": "swiftslug follows semantic versioning strictly",
+      "reason": "no artifact can verify this claim"
+    }
+  ]
 }

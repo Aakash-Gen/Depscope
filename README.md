@@ -126,6 +126,21 @@ The corollary we paid for twice: **when your engineered agent appears to beat a 
 
 ---
 
+## What existed before, and what was built for this hackathon
+
+**Built from scratch during the competition:** every line in `depscope/`, `tests/`,
+`traps/`, `eval/`, and `experiments/` — the Execution Probe, History Miner, Scorer,
+Claim Verifier, reading-only baseline, orchestrator, trap generator, evaluation
+harness, and the nine prior probes. No pre-existing project was extended.
+
+**Not ours, and used as-is:** the seven evaluated packages (`humanize`, `bleach`,
+`tabulate`, `furl`, `python-dotenv`, `python-slugify`, `retrying`) are third-party
+open source, cloned at pinned public commits and never modified. The three trap
+packages are *derived* from three of them, with defects we injected — fully disclosed
+with upstream credit in [traps/TRAPS.md](traps/TRAPS.md), and deliberately not
+published. Standard tooling used unmodified: Python's standard library, `pytest`,
+`coverage`, `git`, and the `claude` CLI for the two prose-reading steps.
+
 ## Repository layout
 
 ```
